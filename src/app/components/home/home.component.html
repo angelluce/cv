@@ -1,57 +1,62 @@
-<div class="container card">
-  <div class="perfil m-5">
-    <h1 class="text-center display-5">{{informacion.perfil.nombre}}</h1>
+<div class="main-container">
+  <div class="perfil p-5">
+    <h1 class="text-center display-3">{{informacion.perfil.nombre}}</h1>
     <h5 class="text-center">{{informacion.perfil.profesion}}</h5>
-    <p class="mt-5">{{informacion.perfil.descripcion}}</p>
+    <!--<p class="mt-5">{{informacion.perfil.descripcion}}</p>-->
   </div>
 
-  <div class="contacto m-5">
-    <h3>Contacto</h3>
-    <p>Edad: {{informacion.contacto.edad}} años.</p>
-    <p>Dirección: {{informacion.contacto.direcion}}</p>
-    <p>Correo electrónico: {{informacion.contacto.correo}}</p>
-    <p>Teléfono: {{informacion.contacto.telefono}}</p>
-    <div class="d-flex">
-      <p>Redes sociales:</p>
-      <div class="mx-1" *ngFor="let redSocial of informacion.contacto.redes">
-        <a href="{{redSocial.enlace}}" target="_blank">{{redSocial.nombre}}</a>
+  <div class="grid-container justify-content-center mt-3">
+    <div class="card shadow item1 bg-dark text-white">
+      <div class="contacto m-3">
+        <h3>Contacto</h3>
+        <p>Edad: {{informacion.contacto.edad}} años.</p>
+        <p>Dirección: {{informacion.contacto.direcion}}</p>
+        <p>Correo electrónico: {{informacion.contacto.correo}}</p>
+        <p>Teléfono: {{informacion.contacto.telefono}}</p>
+        <div class="d-flex">
+          <p>Redes sociales:</p>
+          <div class="mx-1" *ngFor="let redSocial of informacion.contacto.redes">
+            <a href="{{redSocial.enlace}}" target="_blank">{{redSocial.nombre}}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="formacion m-3">
+        <h3>Formación académica</h3>
+        <div class="mb-3" *ngFor="let formacion of informacion.formacion">
+          <p class="mb-1">{{formacion.titulo}}</p>
+          <small>{{formacion.fecha}}</small>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="formacion m-5">
-    <h3>Formación académica</h3>
-    <div class="mb-3" *ngFor="let formacion of informacion.formacion">
-      <p class="mb-1">{{formacion.titulo}}</p>
-      <small>{{formacion.fecha}}</small>
-    </div>
-  </div>
-
-  <div class="habilidades m-5">
-    <h3>Habilidades destacadas</h3>
-    <div *ngFor="let habilidad of informacion.habilidades">
-      <p>{{habilidad.descripcion}}</p>
-    </div>
-  </div>
-
-  <div class="conocimientos m-5">
-    <h3>Conociminetos</h3>
-    <div class="mb-3" *ngFor="let conocimiento of informacion.conocimientos">
-      <p class="mb-1">{{conocimiento.descripcion}}</p>
-      <div *ngFor="let elemento of conocimiento.elemento">
-        <small>{{elemento}}</small>
+    <div class="card shadow item2 bg-light">
+      <div class="habilidades m-3">
+        <h3>Habilidades destacadas</h3>
+        <div *ngFor="let habilidad of informacion.habilidades">
+          <p>{{habilidad.descripcion}}</p>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="experiencia m-5">
-    <h3>Experiencia laboral</h3>
-    <div *ngFor="let experiencia of informacion.experiencia">
-      <h5>{{experiencia.cargo}}</h5>
-      <p>{{experiencia.empresa}}</p>
-      <small>{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
-      <div *ngFor="let actividad of experiencia.actividades">
-        <p>{{actividad}}</p>
+      <div class="conocimientos m-3">
+        <h3>Conociminetos</h3>
+        <div class="grid-card card mb-3 p-3" *ngFor="let conocimiento of informacion.conocimientos">
+          <p class="mb-1">{{conocimiento.descripcion}}</p>
+          <div *ngFor="let elemento of conocimiento.elemento">
+            <small>{{elemento}}</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiencia m-3">
+        <h3>Experiencia laboral</h3>
+        <div *ngFor="let experiencia of informacion.experiencia">
+          <h5>{{experiencia.cargo}}</h5>
+          <p>{{experiencia.empresa}}</p>
+          <small>{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
+          <div *ngFor="let actividad of experiencia.actividades">
+            <p>{{actividad}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
