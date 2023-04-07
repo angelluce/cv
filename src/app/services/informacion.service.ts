@@ -30,9 +30,16 @@ export class InformacionService {
   obtenerRedesSociales(): RedSocial[] {
     return [
       {
+        nombre: 'LinkedIn',
+        enlace: 'https://www.linkedin.com/in/angellucero/'
+      },
+      {
         nombre: 'GitHub',
-        enlace: 'https://github.com/angelluce',
-        icono: 'fab fa-github'
+        enlace: 'https://github.com/angelluce'
+      },
+      {
+        nombre: 'Instagram',
+        enlace: 'https://www.instagram.com/angellucero24/'
       }
     ];
   }
@@ -42,7 +49,7 @@ export class InformacionService {
       edad: 24,
       direcion: 'Cuenca - Ecuador',
       correo: 'angelluce244@gmail.com',
-      telefono: '096 724 7258',
+      telefono: '+(593) 96 724 7258',
       redes: this.obtenerRedesSociales()
     }
   }
@@ -107,6 +114,7 @@ export class InformacionService {
           'JavaScript',
           'TypeScript',
           'Python',
+          'Dart'
         ]
       },
       {
@@ -123,7 +131,6 @@ export class InformacionService {
         descripcion: 'Herramientas en la nube',
         elemento: [
           'AWS',
-          'Heroku',
           'Firebase',
           'Digital Ocean',
         ]

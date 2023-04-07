@@ -10,7 +10,13 @@
 
 .grid-card {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
+}
+
+.card-element {
+  //min-width: 150px;
+  //max-width: 200px;
 }
 
 /* Cambia el diseño del grid para pantallas pequeñas */
@@ -24,6 +30,12 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .grid-card {
+    grid-template-columns: 100%; /* El grid ocupa el 100% del ancho de la pantalla */
+  }
+}
+
 /* Define el contenido y la posición de los elementos */
 .item1 {
   /* Define el estilo para el primer elemento */
@@ -32,3 +44,5 @@
 .item2 {
   /* Define el estilo para el segundo elemento */
 }
+
+
