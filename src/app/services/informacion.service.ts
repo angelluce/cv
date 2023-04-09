@@ -22,8 +22,8 @@ export class InformacionService {
       profesion: 'Tecnólogo Superior en Desarrollo de Software',
       descripcion: 'Gran motivación para continuar aprendiendo y ' +
         'mejorando habilidades laborales para crecer profesionalmente. ' +
-        'Confianza en mi capacidad de contribuir con ideas interesantes ' +
-        'y novedosas dentro de las distintas fases de desarrollo de software.'
+        'Confianza en mi capacidad de contribuir con ideas interesantes y ' +
+        'novedosas dentro de las distintas fases de desarrollo de software.'
     };
   }
 
@@ -99,12 +99,15 @@ export class InformacionService {
         elemento: [
           'SCRUM',
           'Kanban',
+          'XP'
         ]
       },
       {
         descripcion: 'Bases de datos',
         elemento: [
           'PostgreSQL',
+          'Oracle',
+          'Firestore'
         ]
       },
       {
@@ -113,6 +116,7 @@ export class InformacionService {
           'Java',
           'JavaScript',
           'TypeScript',
+          'HTML - CSS',
           'Python',
           'Dart'
         ]
@@ -124,21 +128,21 @@ export class InformacionService {
           'Spring Boot',
           'Ionic',
           'Flask',
+          'React',
           'Flutter',
         ]
       },
       {
         descripcion: 'Herramientas en la nube',
         elemento: [
-          'AWS',
-          'Firebase',
-          'Digital Ocean',
+          'Amazon Web Services',
+          'Firebase'
         ]
       },
       {
         descripcion: 'Repositorios',
         elemento: [
-          'GitHub',
+          'GitHub'
         ]
       }
     ];
@@ -149,14 +153,26 @@ export class InformacionService {
       {
         cargo: 'Desarrollador full stack',
         empresa: 'Futura EC Cía Ltda',
-        fechaInicial: 'Nov. 2021',
+        fechaInicial: 'Feb. 2022',
         fechaFinal: 'Actualmente',
         actividades: [
-          'Desarrollador FullStack y responsable de Sistema Integral de Riesgos',
-          'Desarrollador FullStack y responsable de proyecto de integración',
-          'Encargado de DevOps de los proyectos de software',
-          'Responsable de asistencia técnica y soporte'
+          'Desarrollador full stack y responsable del sistema integral de riesgos: Argus Risk Management',
+          'Desarrollador full stack  y responsable del proyecto de integración con Fitbank y Argus Risk Management: Argus Gateway',
+          'Encargado de operaciones (devops) del proyecto Argus Risk Management',
+          'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management',
+          'Desarrollador full stack de core financiero: Argus Core'
         ]
+      },
+      {
+        cargo: 'Pasante de desarrollo',
+        empresa: 'Futura EC Cía Ltda',
+        fechaInicial: 'Nov. 2021',
+        fechaFinal: 'Ene. 2022',
+        actividades: [
+          'Diseñador de interfaces de usuario',
+          'Desarrollador front end del proyecto Argus Risk Management',
+          'QA del proyecto Argus Risk Management',
+          ]
       }
     ];
   }
