@@ -1,12 +1,14 @@
 <div class="main-container">
+  <!--Header-->
   <div class="perfil p-5">
-    <h1 class="text-center display-3 titulo">{{informacion.perfil.nombre}}</h1>
+    <h1 class="text-center display-2 titulo">{{informacion.perfil.nombre}}</h1>
     <h5 class="text-center">{{informacion.perfil.profesion}}</h5>
     <!--<p class="mt-5">{{informacion.perfil.descripcion}}</p>-->
   </div>
 
-  <div class="grid-container justify-content-center mt-3">
-    <div class="card-sm shadow rounded bg-dark text-white item1">
+  <!--Body-->
+  <div class="grid-container justify-content-center mt-5">
+    <div class="card-sm shadow-lg rounded bg-dark text-white item1">
       <div class="contacto m-3">
         <h3 class="titulo">Contacto</h3>
         <!--<p>Edad: {{informacion.contacto.edad}} años.</p>-->
@@ -31,20 +33,16 @@
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
           </svg>
           {{informacion.contacto.direcion}}</p>
-        <div class="pt-3">
-          <small>Redes sociales:</small>
-          <div *ngFor="let redSocial of informacion.contacto.redes">
-            <div class="card-sm shadow-sm rounded bg-light text-center mt-3 p-2">
-              <a class="" href="{{redSocial.enlace}}" target="_blank">{{redSocial.nombre}}</a>
-            </div>
-          </div>
+        <div class="d-grid gap-2" *ngFor="let redSocial of informacion.contacto.redes">
+          <a class="btn btn-light btn-sm mb-3" href="{{redSocial.enlace}}"
+             target="_blank" role="button" type="button">{{redSocial.nombre}}</a>
         </div>
       </div>
 
       <div class="formacion m-3">
         <h3 class="titulo">Formación académica</h3>
         <div *ngFor="let formacion of informacion.formacion">
-          <p class="mt-3 mb-0">{{formacion.titulo}}</p>
+          <p class="mt-2 mb-0">{{formacion.titulo}}</p>
           <small class="subtitulo">{{formacion.fecha}}</small>
         </div>
       </div>
@@ -59,9 +57,9 @@
       </div>
 
       <div class="conocimientos m-3">
-        <h3 class="titulo">Conociminetos</h3>
+        <h3 class="titulo">Conocimientos</h3>
         <div class="grid-card">
-          <div class="card-sm shadow-sm rounded bg-light card-element mb-3 p-3"
+          <div class="card-sm shadow-sm rounded bg-light card-element p-3"
                *ngFor="let conocimiento of informacion.conocimientos">
             <p class="subtitulo mb-1">{{conocimiento.descripcion}}</p>
             <div *ngFor="let elemento of conocimiento.elemento">
@@ -73,7 +71,8 @@
 
       <div class="experiencia m-3">
         <h3 class="titulo">Experiencia laboral</h3>
-        <div class="card-sm shadow-sm rounded bg-light p-3" *ngFor="let experiencia of informacion.experiencia">
+        <div class="card-sm shadow-sm rounded bg-light mb-3 p-3"
+             *ngFor="let experiencia of informacion.experiencia">
           <h5 class="subtitulo">{{experiencia.cargo}}</h5>
           <p class="subtitulo m-0">{{experiencia.empresa}}</p>
           <small>{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
@@ -82,6 +81,14 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <div class="mt-3">
+    <div class="d-grid gap-2">
+      <a class="btn btn-dark shadow-lg" type="button"
+         href="{{urlCV}}" target="_blank">Descargar CV</a>
     </div>
   </div>
 </div>
