@@ -34,7 +34,7 @@
           </svg>
           {{informacion.contacto.direcion}}</p>
         <div class="d-grid gap-2" *ngFor="let redSocial of informacion.contacto.redes">
-          <a class="btn btn-light btn-sm mb-3" href="{{redSocial.enlace}}"
+          <a class="btn btn-light mb-3" href="{{redSocial.enlace}}"
              target="_blank" role="button" type="button">{{redSocial.nombre}}</a>
         </div>
       </div>
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <div class="card-sm shadow rounded item2">
+    <div class="card-sm shadow-lg rounded item2">
       <div class="habilidades m-3">
         <h3 class="titulo">Habilidades destacadas</h3>
         <div *ngFor="let habilidad of informacion.habilidades">
