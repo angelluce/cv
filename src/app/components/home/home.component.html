@@ -1,12 +1,12 @@
 <div class="main-container">
-  <!--Header-->
+  <!-- Encabezado -->
   <div class="perfil p-5">
     <h1 class="text-center display-2 titulo">{{informacion.perfil.nombre}}</h1>
     <h5 class="text-center">{{informacion.perfil.profesion}}</h5>
     <!--<p class="mt-5">{{informacion.perfil.descripcion}}</p>-->
   </div>
 
-  <!--Body-->
+  <!-- Curriculúm -->
   <div class="grid-container justify-content-center mt-5">
     <div class="card-sm shadow-lg rounded bg-dark text-white item1">
       <div class="contacto m-3">
@@ -81,6 +81,17 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Repositorios -->
+  <div class="card shadow-lg justify-content-center mt-3 p-3">
+    <h3 class="titulo">Repositorios públicos</h3>
+    <div class="row row-cols-auto justify-content-center">
+      <a *ngFor="let repositorio of repositorios"
+         class="card shadow-sm bg-light text-center m-2 p-3"
+         target="_blank" style="width: 15rem;" href="{{repositorio.url}}">
+        {{repositorio.nombre}}</a>
     </div>
   </div>
 
