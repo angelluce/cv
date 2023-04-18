@@ -4,7 +4,7 @@ import {HomeComponent} from "./components/home/home.component";
 
 const routes: Routes = [
   {
-    path: 'inicio',
+    path: '',
     component: HomeComponent
   },
   {
@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path: '**',
     pathMatch: 'full',
-    redirectTo: 'inicio'
+    redirectTo: ''
   }
 ];
 
