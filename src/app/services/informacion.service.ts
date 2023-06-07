@@ -19,7 +19,7 @@ export class InformacionService {
   obtenerPerfil(): PerfilPersonal {
     return {
       nombre: 'Angel Lucero',
-      profesion: 'Tecnólogo Superior en Desarrollo de Software',
+      profesion: 'Desarrollador de software',
       descripcion: 'Gran motivación para continuar aprendiendo y ' +
         'mejorando habilidades laborales para crecer profesionalmente. ' +
         'Confianza en mi capacidad de contribuir con ideas interesantes y ' +
@@ -39,7 +39,7 @@ export class InformacionService {
       },
       {
         nombre: 'Instagram',
-        enlace: 'https://www.instagram.com/angellucero24/'
+        enlace: 'https://www.instagram.com/angel.lu24/'
       }
     ];
   }
@@ -98,7 +98,6 @@ export class InformacionService {
         descripcion: 'Metodología',
         elemento: [
           'SCRUM',
-          'Kanban',
           'XP'
         ]
       },
@@ -118,7 +117,8 @@ export class InformacionService {
           'TypeScript',
           'HTML - CSS',
           'Python',
-          'Dart'
+          'Dart',
+          'SQL'
         ]
       },
       {
@@ -128,6 +128,7 @@ export class InformacionService {
           'Spring Boot',
           'Ionic',
           'Flask',
+          'Express',
           'React',
           'Flutter',
         ]
@@ -136,7 +137,8 @@ export class InformacionService {
         descripcion: 'Herramientas en la nube',
         elemento: [
           'Amazon Web Services',
-          'Firebase'
+          'Firebase',
+          'Jira',
         ]
       },
       {
@@ -154,13 +156,13 @@ export class InformacionService {
         cargo: 'Desarrollador full stack',
         empresa: 'Futura EC Cía Ltda',
         fechaInicial: 'Feb. 2022',
-        fechaFinal: 'Actualmente',
+        fechaFinal: 'May. 2023',
         actividades: [
-          'Desarrollador full stack y responsable del sistema integral de riesgos: Argus Risk Management',
-          'Desarrollador full stack  y responsable del proyecto de integración con Fitbank y Argus Risk Management: Argus Gateway',
+          'Desarrollador full stack y responsable del proyecto integral de riesgos para cooperativas: Argus Risk Management',
+          'Desarrollador full stack  y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway',
           'Encargado de operaciones (devops) del proyecto Argus Risk Management',
           'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management',
-          'Desarrollador full stack de core financiero: Argus Core'
+          'Desarrollador full stack del proyecto core financiero: Argus Core'
         ]
       },
       {

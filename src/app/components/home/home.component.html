@@ -43,7 +43,7 @@
         <h3 class="titulo">Formación académica</h3>
         <div *ngFor="let formacion of informacion.formacion">
           <p class="mt-2 mb-0">{{formacion.titulo}}</p>
-          <small class="subtitulo">{{formacion.fecha}}</small>
+          <small style="font-style: italic">{{formacion.fecha}}</small>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@
              *ngFor="let experiencia of informacion.experiencia">
           <h5 class="subtitulo">{{experiencia.cargo}}</h5>
           <p class="subtitulo m-0">{{experiencia.empresa}}</p>
-          <small>{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
+          <small class="text-muted">{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
           <div *ngFor="let actividad of experiencia.actividades">
             <p class="mt-3 mb-0">{{actividad}}</p>
           </div>
@@ -84,7 +84,7 @@
     </div>
   </div>
 
-  <!-- Repositorios -->
+  <!-- Repositorios
   <div class="card shadow-lg justify-content-center mt-3 p-3">
     <h3 class="titulo">Repositorios públicos</h3>
     <div class="row row-cols-auto justify-content-center">
@@ -93,7 +93,7 @@
          target="_blank" style="width: 15rem;" href="{{repositorio.url}}">
         {{repositorio.nombre}}</a>
     </div>
-  </div>
+  </div>-->
 
   <!--Footer-->
   <div class="mt-3">
