@@ -5,8 +5,9 @@ import {Contacto} from "../models/Contacto";
 import {RedSocial} from "../models/RedSocial";
 import {FormacionAcademica} from "../models/FormacionAcademica";
 import {HabilidadDestacada} from "../models/HabilidadDestacada";
-import {Conocimientos} from "../models/Conocimientos";
+import {Conocimiento} from "../models/Conocimiento";
 import {ExperienciaLaboral} from "../models/ExperienciaLaboral";
+import {Certificacion} from "../models/Certificacion";
 
 @Injectable({
   providedIn: 'root'
@@ -70,6 +71,17 @@ export class InformacionService {
     ];
   }
 
+  obtenerCertificaciones(): Certificacion[] {
+    return [
+      {
+        nombre: 'Oracle Certified Associate, Java SE 8 Programmer',
+        empresa: 'Oracle',
+        fecha: '2020',
+        duracion: 'Sin fecha de expiración'
+      }
+    ]
+  }
+
   obtenerHabilidadesDesatacas(): HabilidadDestacada[] {
     return [
       {
@@ -92,7 +104,7 @@ export class InformacionService {
     ];
   }
 
-  obtenerConocimientos(): Conocimientos[] {
+  obtenerConocimientos(): Conocimiento[] {
     return [
       {
         descripcion: 'Metodología',
@@ -185,6 +197,7 @@ export class InformacionService {
       perfil: this.obtenerPerfil(),
       contacto: this.obtenerContacto(),
       formacion: this.obtenerFormacionAcademica(),
+      certificaciones: this.obtenerCertificaciones(),
       habilidades: this.obtenerHabilidadesDesatacas(),
       conocimientos: this.obtenerConocimientos(),
       experiencia: this.obtenerExperienciaLaboral()
