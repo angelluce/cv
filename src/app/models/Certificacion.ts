@@ -1,5 +1,5 @@
 export class Certificacion {
-  nombre: string;
+  titulo: string;
   empresa: string;
   fecha: string;
   duracion: string;

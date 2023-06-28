@@ -74,7 +74,7 @@ export class InformacionService {
   obtenerCertificaciones(): Certificacion[] {
     return [
       {
-        nombre: 'Oracle Certified Associate, Java SE 8 Programmer',
+        titulo: 'Oracle Certified Associate, Java SE 8 Programmer',
         empresa: 'Oracle',
         fecha: '2020',
         duracion: 'Sin fecha de expiración'
