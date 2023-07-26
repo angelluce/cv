@@ -29,3 +29,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Commit and push
 
 To add this text into commit box to include another account `Co-authored-by: @smartsoftec <smartsoft.dev.ec@gmail.com>` 
+
+## Deploy to GitHub Pages
+
+Run `ng deploy --base-href=https://angelluce.github.io/[NOMBRE_REPO]/`  to deploy the project to GitHub Pages.
+
+```shell
+ng deploy --base-href=https://angelluce.github.io/cv/
+```
