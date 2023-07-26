@@ -32,15 +32,18 @@ export class InformacionService {
     return [
       {
         nombre: 'LinkedIn',
-        enlace: 'https://www.linkedin.com/in/angellucero/'
+        enlace: 'https://www.linkedin.com/in/angellucero/',
+        icono: 'pi-linkedin'
       },
       {
         nombre: 'GitHub',
-        enlace: 'https://github.com/angelluce'
+        enlace: 'https://github.com/angelluce',
+        icono: 'pi-github'
       },
       {
         nombre: 'Instagram',
-        enlace: 'https://www.instagram.com/angel.lu24/'
+        enlace: 'https://www.instagram.com/angel.lu24/',
+        icono: 'pi-instagram'
       }
     ];
   }
