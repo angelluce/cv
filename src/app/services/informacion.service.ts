@@ -61,15 +61,15 @@ export class InformacionService {
   obtenerFormacionAcademica(): FormacionAcademica[] {
     return [
       {
+        titulo: 'Tecnología Superior en Desarrollo de ' +
+          'Software del Instituto Superior Tecnológico del Azuay.',
+        fecha: 'Cuenca, 2022.'
+      },
+      {
         titulo: 'Bachillerato Técnico - De Servicios ' +
           'en Administración de Sistemas del ' +
           'Colegio Técnico Industrial Ricaurte.',
         fecha: 'Cuenca, 2017.'
-      },
-      {
-        titulo: 'Tecnología Superior en Desarrollo de ' +
-          'Software del Instituto Superior Tecnológico del Azuay.',
-        fecha: 'Cuenca, 2022.'
       }
     ];
   }
@@ -77,10 +77,34 @@ export class InformacionService {
   obtenerCertificaciones(): Certificacion[] {
     return [
       {
-        titulo: 'Oracle Certified Associate, Java SE 8 Programmer',
-        empresa: 'Oracle',
-        fecha: '2020',
-        duracion: 'Sin fecha de expiración'
+        titulo: 'Scrum Foundation Professional Certificate SFPC',
+        empresa: 'CertiProf',
+        fecha: 'jun. 2023',
+      },
+      {
+        titulo: 'Finalización del proyecto Argus Risk Management',
+        empresa: 'Futura EC. Cía. Ltda.',
+        fecha: 'abr. 2023',
+      },
+      {
+        titulo: 'Digitaliza paso a paso tu negocio con herramientas de Google',
+        empresa: 'Google',
+        fecha: 'ene. 2022',
+      },
+      {
+        titulo: 'Productividad en Trabajos Remotos',
+        empresa: 'Netzun',
+        fecha: 'jun. 2021',
+      },
+      {
+        titulo: 'NDG Linux Unhatched',
+        empresa: 'Cisco Networking Academy',
+        fecha: 'ago. 2020',
+      },
+      {
+        titulo: 'Introducción a IoT',
+        empresa: 'Cisco Networking Academy',
+        fecha: 'ago. 2020',
       }
     ]
   }
@@ -168,10 +192,21 @@ export class InformacionService {
   obtenerExperienciaLaboral(): ExperienciaLaboral[] {
     return [
       {
+        cargo: 'Desarrollador autónomo',
+        empresa: 'Freelance',
+        fechaInicial: 'nov. 2018',
+        fechaFinal: 'actilidad',
+        actividades: [
+          'Desarrollar proyectos de software (aplicaciones web, móviles y escritorio)',
+          'Diseñar bases de datos SQL y No SQL',
+          'Desplegar aplicaciones en la nube',
+        ]
+      },
+      {
         cargo: 'Desarrollador full stack',
         empresa: 'Futura EC Cía Ltda',
-        fechaInicial: 'Feb. 2022',
-        fechaFinal: 'May. 2023',
+        fechaInicial: 'feb. 2022',
+        fechaFinal: 'may. 2023',
         actividades: [
           'Desarrollador full stack y responsable del proyecto integral de riesgos para cooperativas: Argus Risk Management',
           'Desarrollador full stack  y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway',
@@ -181,14 +216,27 @@ export class InformacionService {
         ]
       },
       {
-        cargo: 'Pasante de desarrollo',
+        cargo: 'Pasante de desarrollo de software',
         empresa: 'Futura EC Cía Ltda',
-        fechaInicial: 'Nov. 2021',
-        fechaFinal: 'Ene. 2022',
+        fechaInicial: 'nov. 2021',
+        fechaFinal: 'ene. 2022',
         actividades: [
           'Diseñador de interfaces de usuario',
           'Desarrollador front end del proyecto Argus Risk Management',
           'QA del proyecto Argus Risk Management',
+          ]
+      },
+      {
+        cargo: 'Pasante de administración de sistemas',
+        empresa: 'SECOMPU',
+        fechaInicial: 'may. 2017',
+        fechaFinal: 'jun. 2017',
+        actividades: [
+          'Reparar equipos informáticos',
+          'Instalar software y hardware',
+          'Realizar mantenimiento preventivo y correctivo de equipos informáticos',
+          'Realizar cableado estructurado',
+          'Servicio de atención al cliente'
           ]
       }
     ];
