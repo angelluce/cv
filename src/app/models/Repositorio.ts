@@ -1,4 +1,6 @@
 export class Repositorio {
   nombre: string;
-  url: string;
+  descripcion: string;
+  repo: string;
+  page: string;
 }

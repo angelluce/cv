@@ -96,6 +96,7 @@ a {
 .btn-light {
   color: $darker;
   background: $light;
+  border: solid 1px #d3d3d3;
 
   &:hover {
     background: $darker;

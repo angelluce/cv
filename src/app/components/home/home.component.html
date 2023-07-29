@@ -84,22 +84,30 @@
     </div>
 
     <!-- REPOSITORIOS -->
-    <!-- <div class="mb-5">
+    <div class="mb-5">
       <h3 class="fw-bold text-center">Repositorios públicos</h3>
       <div class="grid-card">
-        <a *ngFor="let repositorio of repositorios"
-           class="btn-light rounded shadow-sm text-center p-3"
-           target="_blank" href="{{repositorio.url}}">
-          {{repositorio.nombre}}</a>
+        <div *ngFor="let repositorio of informacion.repositorios"
+             class="card-sm shadow-sm bg-light text-center p-3">
+          <h5 class="fw-semibold">{{repositorio.nombre}}</h5>
+          <p class="fw-normal">{{repositorio.descripcion}}</p>
+          <div class="d-flex justify-content-between">
+            <a class="btn-light rounded shadow-sm p-3" target="_blank"
+               href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
+            <a class="btn-light rounded shadow-sm p-3" target="_blank"
+               href="{{repositorio.page}}"><i class="pi pi-globe"></i></a>
+          </div>
+        </div>
+
       </div>
-    </div>-->
+    </div>
 
     <!-- CV -->
     <div class="d-grid gap-2">
-      <a class="btn-dark rounded shadow-sm text-center p-3 mobile-only" type="button"
+      <a class="btn-dark rounded shadow text-center p-3 mobile-only" type="button"
          href="/assets/files/ANGEL_LUCERO.pdf" target="_blank">Curriculum vitae</a>
       <!-- Button trigger modal -->
-      <a class="btn-dark rounded shadow-sm text-center p-3 web-only" type="button"
+      <a class="btn-dark rounded shadow text-center p-3 web-only" type="button"
          data-bs-toggle="modal" data-bs-target="#exampleModal">Curriculum vitae</a>
     </div>
   </div>
