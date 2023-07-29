@@ -5,6 +5,7 @@ import {HabilidadDestacada} from "./HabilidadDestacada";
 import {Conocimiento} from "./Conocimiento";
 import {ExperienciaLaboral} from "./ExperienciaLaboral";
 import {Certificacion} from "./Certificacion";
+import {Repositorio} from "./Repositorio";
 
 export class Informacion {
   perfil: PerfilPersonal;
@@ -14,4 +15,5 @@ export class Informacion {
   habilidades: HabilidadDestacada[];
   conocimientos: Conocimiento[];
   experiencia: ExperienciaLaboral[];
+  repositorios: Repositorio[];
 }

@@ -8,6 +8,7 @@ import {HabilidadDestacada} from "../models/HabilidadDestacada";
 import {Conocimiento} from "../models/Conocimiento";
 import {ExperienciaLaboral} from "../models/ExperienciaLaboral";
 import {Certificacion} from "../models/Certificacion";
+import {Repositorio} from "../models/Repositorio";
 
 @Injectable({
   providedIn: 'root'
@@ -224,7 +225,7 @@ export class InformacionService {
           'Diseñador de interfaces de usuario',
           'Desarrollador front end del proyecto Argus Risk Management',
           'QA del proyecto Argus Risk Management',
-          ]
+        ]
       },
       {
         cargo: 'Pasante de administración de sistemas',
@@ -237,7 +238,48 @@ export class InformacionService {
           'Realizar mantenimiento preventivo y correctivo de equipos informáticos',
           'Realizar cableado estructurado',
           'Servicio de atención al cliente'
-          ]
+        ]
+      }
+    ];
+  }
+
+  obtenerRepositorios(): Repositorio[] {
+    return [
+      {
+        nombre: 'NASA APOD',
+        descripcion: 'Consumo desde la API de la NASA para mostrar la imagen astronómica del día.',
+        repo: 'https://github.com/angelluce/NASA',
+        page: 'https://angelluce.github.io/NASA/'
+      },
+      {
+        nombre: 'ChatGPT API',
+        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada.',
+        repo: 'https://github.com/angelluce/NASA',
+        page: 'https://angelluce.github.io/NASA/'
+      },
+      {
+        nombre: 'Juego de la vida',
+        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida".',
+        repo: 'https://github.com/angelluce/game-of-life',
+        page: 'https://juego-vida.web.app/'
+      },
+      {
+        nombre: 'Liga de fútbol',
+        descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado',
+        repo: 'https://github.com/angelluce/football-league-web-ui',
+        page: 'https://my-coded-mind.web.app/'
+      },
+      {
+        nombre: 'Rick and Morty',
+        descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie.',
+        repo: 'https://github.com/angelluce/RickAndMorty',
+        page: 'https://angelluce.github.io/RickAndMorty/'
+      },
+      {
+        nombre: 'ChatBot WhatsApp',
+        descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios.',
+        repo: 'https://github.com/angelluce/ChatBotWhatsApp',
+        page: 'https://angelluce.github.io/ChatBotWhatsApp/'
       }
     ];
   }
@@ -251,7 +293,8 @@ export class InformacionService {
       certificaciones: this.obtenerCertificaciones(),
       habilidades: this.obtenerHabilidadesDesatacas(),
       conocimientos: this.obtenerConocimientos(),
-      experiencia: this.obtenerExperienciaLaboral()
+      experiencia: this.obtenerExperienciaLaboral(),
+      repositorios: this.obtenerRepositorios()
     };
   }
 }
