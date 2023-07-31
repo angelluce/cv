@@ -5,7 +5,7 @@
       <h5 class="text-uppercase">{{informacion.perfil.profesion}}</h5>
       <div class="d-flex justify-content-center">
         <a *ngFor="let redSocial of informacion.contacto.redes"
-           class="btn-dark rounded shadow p-3 mx-1 my-2"
+           class="btn-dark rounded shadow-sm p-2 mx-1 my-2"
            href="{{redSocial.enlace}}" target="_blank" role="button">
           <i class="pi {{redSocial.icono}}"></i>
         </a>
@@ -18,11 +18,11 @@
       </div>
     </div>
   </div>
-  <div class="right-side">
+  <div class="right-side bg-light fadeIn">
     <!-- HABILIDADES -->
     <div class="mb-5">
       <h3 class="fw-bold text-center">Habilidades destacadas</h3>
-      <div class="card-sm shadow-sm bg-light p-3">
+      <div class="card-sm rounded shadow-sm p-3">
         <p *ngFor="let habilidad of informacion.habilidades">
           {{habilidad.descripcion}}</p>
       </div>
@@ -31,7 +31,7 @@
     <!-- EDUCACION -->
     <div class="mb-5">
       <h3 class="fw-bold text-center">Formación académica</h3>
-      <div class="card-sm shadow-sm bg-light p-3">
+      <div class="card-sm rounded shadow-sm p-3">
         <div *ngFor="let formacion of informacion.formacion">
           <p class="fw-normal mt-3 mb-0">{{formacion.titulo}}</p>
           <small class="fw-normal fst-italic">{{formacion.fecha}}</small>
@@ -41,8 +41,8 @@
 
     <!-- CERTIFICACIONES -->
     <div class="mb-5">
-      <h3 class="fw-bold text-center">Licencias y certificaciones</h3>
-      <div class="card-sm shadow-sm bg-light p-3">
+      <h3 class="fw-bold text-center">Certificaciones y cursos</h3>
+      <div class="card-sm rounded shadow-sm p-3">
         <div *ngFor="let certificacion of informacion.certificaciones">
           <p class="fw-normal mt-3 mb-0">{{certificacion.titulo}}</p>
           <div class="d-flex justify-content-between">
@@ -57,7 +57,7 @@
     <div class="mb-5">
       <h3 class="fw-bold text-center">Conocimientos y aptitudes</h3>
       <div class="grid-card">
-        <div class="card-sm shadow-sm bg-light p-3"
+        <div class="card-sm rounded shadow-sm p-3"
              *ngFor="let conocimiento of informacion.conocimientos">
           <p class="fw-semibold">{{conocimiento.descripcion}}</p>
           <div *ngFor="let elemento of conocimiento.elemento">
@@ -70,7 +70,7 @@
     <!-- EXPERIENCIA -->
     <div class="mb-5">
       <h3 class="fw-bold text-center">Experiencia laboral</h3>
-      <div class="card-sm shadow-sm bg-light mb-3 p-3"
+      <div class="card-sm rounded shadow-sm mb-3 p-3"
            *ngFor="let experiencia of informacion.experiencia">
         <h5 class="fw-semibold">{{experiencia.cargo}}</h5>
         <div class="d-flex justify-content-between">
@@ -88,13 +88,13 @@
       <h3 class="fw-bold text-center">Repositorios públicos</h3>
       <div class="grid-card">
         <div *ngFor="let repositorio of informacion.repositorios"
-             class="card-sm shadow-sm bg-light text-center p-3">
+             class="card-sm rounded shadow-sm text-center p-3">
           <h5 class="fw-semibold">{{repositorio.nombre}}</h5>
           <p class="fw-normal">{{repositorio.descripcion}}</p>
           <div class="d-flex justify-content-between">
-            <a class="btn-light rounded shadow-sm p-3" target="_blank"
+            <a class="btn-light rounded shadow-sm p-2" target="_blank"
                href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
-            <a class="btn-light rounded shadow-sm p-3" target="_blank"
+            <a class="btn-light rounded shadow-sm p-2" target="_blank"
                href="{{repositorio.page}}"><i class="pi pi-globe"></i></a>
           </div>
         </div>
@@ -104,10 +104,10 @@
 
     <!-- CV -->
     <div class="d-grid gap-2">
-      <a class="btn-dark rounded shadow text-center p-3 mobile-only" type="button"
+      <a class="btn-dark rounded shadow-sm text-center p-3 mobile-only" type="button"
          href="/assets/files/ANGEL_LUCERO.pdf" target="_blank">Curriculum vitae</a>
       <!-- Button trigger modal -->
-      <a class="btn-dark rounded shadow text-center p-3 web-only" type="button"
+      <a class="btn-dark rounded shadow-sm text-center p-3 web-only" type="button"
          data-bs-toggle="modal" data-bs-target="#exampleModal">Curriculum vitae</a>
     </div>
   </div>

@@ -78,6 +78,21 @@ export class InformacionService {
   obtenerCertificaciones(): Certificacion[] {
     return [
       {
+        titulo: 'Docker Essentials: A Developer Introduction',
+        empresa: 'IBM',
+        fecha: 'jul. 2023',
+      },
+      {
+        titulo: 'Python for Data Science',
+        empresa: 'IBM',
+        fecha: 'jul. 2023',
+      },
+      {
+        titulo: 'Fundamentos en Gestión de Proyectos',
+        empresa: 'soylider.net',
+        fecha: 'jul. 2023',
+      },
+      {
         titulo: 'Scrum Foundation Professional Certificate SFPC',
         empresa: 'CertiProf',
         fecha: 'jun. 2023',
