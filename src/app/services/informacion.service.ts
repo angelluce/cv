@@ -78,6 +78,21 @@ export class InformacionService {
   obtenerCertificaciones(): Certificacion[] {
     return [
       {
+        titulo: 'Docker Essentials: A Developer Introduction',
+        empresa: 'IBM',
+        fecha: 'jul. 2023',
+      },
+      {
+        titulo: 'Python for Data Science',
+        empresa: 'IBM',
+        fecha: 'jul. 2023',
+      },
+      {
+        titulo: 'Fundamentos en Gestión de Proyectos',
+        empresa: 'soylider.net',
+        fecha: 'jun. 2023',
+      },
+      {
         titulo: 'Scrum Foundation Professional Certificate SFPC',
         empresa: 'CertiProf',
         fecha: 'jun. 2023',
@@ -248,14 +263,14 @@ export class InformacionService {
       {
         nombre: 'NASA APOD',
         descripcion: 'Consumo desde la API de la NASA para mostrar la imagen astronómica del día.',
-        repo: 'https://github.com/angelluce/NASA',
-        page: 'https://angelluce.github.io/NASA/'
+        repo: 'https://github.com/angelluce/nasa',
+        page: 'https://angelluce.github.io/nasa/'
       },
       {
-        nombre: 'ChatGPT API',
+        nombre: 'Chat GPT API',
         descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada.',
-        repo: 'https://github.com/angelluce/NASA',
-        page: 'https://angelluce.github.io/NASA/'
+        repo: 'https://github.com/angelluce/chat-gpt-api',
+        page: 'https://angelluce.github.io/chatgpt-api/'
       },
       {
         nombre: 'Juego de la vida',
@@ -272,14 +287,14 @@ export class InformacionService {
       {
         nombre: 'Rick and Morty',
         descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie.',
-        repo: 'https://github.com/angelluce/RickAndMorty',
-        page: 'https://angelluce.github.io/RickAndMorty/'
+        repo: 'https://github.com/angelluce/rick-and-morty',
+        page: 'https://angelluce.github.io/rick-and-morty/'
       },
       {
         nombre: 'ChatBot WhatsApp',
         descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios.',
-        repo: 'https://github.com/angelluce/ChatBotWhatsApp',
-        page: 'https://angelluce.github.io/ChatBotWhatsApp/'
+        repo: 'https://github.com/angelluce/chatbot-whatsapp',
+        page: 'https://angelluce.github.io/chatbot-whatsapp/'
       }
     ];
   }
