@@ -150,7 +150,7 @@ export class InformacionService {
   obtenerConocimientos(): Conocimiento[] {
     return [
       {
-        descripcion: 'Metodología',
+        descripcion: 'Metodologías',
         elemento: [
           'SCRUM',
           'XP'
