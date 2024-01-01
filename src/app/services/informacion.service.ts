@@ -234,7 +234,7 @@ export class InformacionService {
       },
       {
         cargo: 'Desarrollador full stack',
-        empresa: 'Fuhter Cía Ltda',
+        empresa: 'FASTAPP S.A.S',
         fechaInicial: 'jun. 2023',
         fechaFinal: 'sep. 2023',
         actividades: [
@@ -245,7 +245,7 @@ export class InformacionService {
       },
       {
         cargo: 'Desarrollador full stack',
-        empresa: 'FASTAPP S.A.S',
+        empresa: 'Futura EC Cía Ltda',
         fechaInicial: 'feb. 2022',
         fechaFinal: 'may. 2023',
         actividades: [
