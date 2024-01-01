@@ -2,7 +2,7 @@
 
 $dark: #061534;
 $darker: #040813;
-$light: #f8f9fa;
+$light: #f8f8f8;
 
 * {
   font-family: 'EB Garamond', serif;
@@ -119,4 +119,42 @@ a {
   .grid-card {
     grid-template-columns: 100%;
   }
+  .btn-dark {
+    color: $light;
+    background: $darker;
+
+    &:hover {
+      background: $light;
+      color: $darker;
+    }
+  }
+
+  .btn-light {
+    color: $darker;
+    background: $light;
+    border: solid 1px #d3d3d3;
+
+    &:hover {
+      background: $darker;
+      color: $light;
+    }
+  }
+
+  .bg-light {
+    background: $light !important;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeInAnimation 1s ease-in-out forwards;
+  opacity: 0;
 }
