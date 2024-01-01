@@ -212,7 +212,7 @@ export class InformacionService {
         cargo: 'Desarrollador autónomo',
         empresa: 'Freelance',
         fechaInicial: 'nov. 2018',
-        fechaFinal: 'actilidad',
+        fechaFinal: 'actualidad',
         actividades: [
           'Desarrollar proyectos de software (aplicaciones web, móviles y escritorio)',
           'Diseñar bases de datos SQL y NoSQL',
@@ -222,27 +222,34 @@ export class InformacionService {
         ]
       },
       {
-        cargo: 'Desarrollador front-end',
+        cargo: 'Desarrollador front end',
         empresa: 'Fuhter Cía Ltda',
-        fechaInicial: 'feb. 2022',
-        fechaFinal: 'may. 2023',
+        fechaInicial: 'ago. 2023',
+        fechaFinal: 'actualidad',
         actividades: [
-          'Desarrollador front-end del proyecto de prevención de lavado de activos: SARF',
-          'Desarrollador front-end y responsable de operaciones (devops) del proyecto de contabilidad: CobaSoft',
-          'Desarrollador front-end del proyecto de facturación electrónica',
+          'Desarrollador front end del proyecto de prevención de lavado de activos: SARF',
+          'Desarrollador front end y responsable de operaciones (devops) del proyecto de contabilidad: CobaSoft',
+          'Desarrollador front end del proyecto de facturación electrónica',
         ]
       },
       {
         cargo: 'Desarrollador full stack',
-        empresa: 'Futura EC Cía Ltda',
+        empresa: 'Fuhter Cía Ltda',
+        fechaInicial: 'jun. 2023',
+        fechaFinal: 'sep. 2023',
+        actividades: [
+          'Desarrollador front end del proyecto de prevención de lavado de activos: SARF',
+          'Desarrollador front end y responsable de operaciones (devops) del proyecto de contabilidad: CobaSoft',
+          'Desarrollador front end del proyecto de facturación electrónica',
+        ]
+      },
+      {
+        cargo: 'Desarrollador full stack',
+        empresa: 'FASTAPP S.A.S',
         fechaInicial: 'feb. 2022',
         fechaFinal: 'may. 2023',
         actividades: [
-          'Desarrollador full stack y responsable del proyecto integral de riesgos para cooperativas: Argus Risk Management',
-          'Desarrollador full stack  y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway',
-          'Encargado de operaciones (devops) del proyecto Argus Risk Management',
-          'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management',
-          'Desarrollador full stack del proyecto core financiero: Argus Core'
+          'Desarrollador full stack y responsable del proyecto de taxímetro (aplicación web y móvil) FASTAPP.',
         ]
       },
       {
