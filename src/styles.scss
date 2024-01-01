@@ -74,15 +74,21 @@ a {
   margin-left: -3rem !important;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 840px) {
   .mobile-only {
     display: none;
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 839px) {
   .web-only {
     display: none;
+  }
+
+  .grid-card {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 16px;
   }
 }
 
