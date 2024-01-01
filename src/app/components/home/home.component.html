@@ -27,7 +27,7 @@
         <a class="btn-green rounded-4 ms-n1 px-2" href="{{environment.linkedin}}"
            target="_blank"><small>Disponible</small></a>
       </div>
-      <h1 class="fw-bold text-center display-3 mt-5">Hola, soy Angel Lucero</h1>
+      <h1 class="fw-bold text-center display-5 mt-5">Hola, soy Angel Lucero</h1>
       <label class="mt-3">+5 años de experiencia. Desarrollador de software. De Cuenca, Ecuador.
         Gran motivación para seguir aprendiendo y mejorando habilidades técnicas para crecer profesionalmente.
         Confianza en mi capacidad en contribuir ideas interesantes y novedosas dentro de las distintas fases de
@@ -45,11 +45,11 @@
 
   <!-- CONOCIMIENTOS -->
   <div class="my-5">
-    <h3 class="fw-bold text-center" id="skills">Conocimientos y aptitudes</h3>
+    <h4 class="fw-bold text-center mb-3" id="skills">Conocimientos y aptitudes</h4>
     <div class="grid-card">
       <div class="rounded shadow p-3"
            *ngFor="let conocimiento of informacion.conocimientos">
-        <p class="fw-semibold">{{conocimiento.descripcion}}</p>
+        <p class="fw-bold border-bottom">{{conocimiento.descripcion}}</p>
         <div *ngFor="let elemento of conocimiento.elemento">
           <small>{{elemento}}</small>
         </div>
@@ -59,12 +59,12 @@
 
   <!-- EXPERIENCIA -->
   <div class="my-5">
-    <h3 class="fw-bold text-center" id="experience">Experiencia laboral</h3>
+    <h4 class="fw-bold text-center mb-3" id="experience">Experiencia laboral</h4>
     <div class="rounded shadow mb-3 p-3"
          *ngFor="let experiencia of informacion.experiencia">
-      <h5 class="fw-semibold">{{experiencia.cargo}}</h5>
-      <div class="d-flex justify-content-between">
-        <h6 class="fw-normal">{{experiencia.empresa}}</h6>
+      <p class="fw-bold m-0">{{experiencia.cargo}}</p>
+      <div class="d-flex justify-content-between border-bottom">
+        <small class="fw-normal">{{experiencia.empresa}}</small>
         <small class="fw-light fst-italic">{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
       </div>
       <div *ngFor="let actividad of experiencia.actividades">
@@ -75,13 +75,13 @@
 
   <!-- CERTIFICACIONES -->
   <div class="my-5">
-    <h3 class="fw-bold text-center" id="certifications">Certificaciones y licencias</h3>
+    <h4 class="fw-bold text-center mb-3" id="certifications">Certificaciones y licencias</h4>
     <div class="rounded shadow p-3">
       <div *ngFor="let certificacion of informacion.certificaciones">
-        <p class="fw-normal mt-3 mb-0">{{certificacion.titulo}}</p>
+        <p class="fw-bold mt-3 mb-0 border-bottom">{{certificacion.titulo}}</p>
         <div class="d-flex justify-content-between">
-          <small class="fw-normal">{{certificacion.empresa}}</small>
-          <small class="fw-normal fst-italic">{{certificacion.fecha}}</small>
+          <p class="mb-0">{{certificacion.empresa}}</p>
+          <small class="mb-0 fst-italic">{{certificacion.fecha}}</small>
         </div>
       </div>
     </div>
@@ -89,18 +89,20 @@
 
   <!-- REPOSITORIOS -->
   <div class="my-5">
-    <h3 class="fw-bold text-center" id="repositories">Repositorios públicos</h3>
+    <h4 class="fw-bold text-center mb-3" id="repositories">Repositorios públicos</h4>
     <div class="grid-card">
       <div *ngFor="let repositorio of informacion.repositorios"
            class="rounded shadow text-center p-3">
-        <h5 class="fw-semibold">{{repositorio.nombre}}</h5>
-        <p class="fw-normal">{{repositorio.descripcion}}</p>
-        <div class="d-flex justify-content-end">
-          <a class="btn btn-dark mx-1" target="_blank"
-             href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
-          <a class="btn btn-dark mx-1" target="_blank"
-             href="{{repositorio.page}}"><i class="pi pi-globe"></i></a>
+        <div class="d-flex justify-content-between mb-3 border-bottom">
+          <p class="fw-bold m-0">{{repositorio.nombre}}</p>
+          <div class="d-flex justify-content-end">
+            <a class="text-dark me-4" target="_blank"
+               href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
+            <a class="text-dark" target="_blank"
+               href="{{repositorio.page}}"><i class="pi pi-desktop"></i></a>
+          </div>
         </div>
+        <p class="fw-normal">{{repositorio.descripcion}}</p>
       </div>
 
     </div>
@@ -108,9 +110,9 @@
 </div>
 
 <div class="fixed-bottom bg-white text-center p-3 web-only">
-  <a class="btn-dark rounded-4 mx-1 p-2" href="#about-me">Sobre mí</a>
-  <a class="btn-dark rounded-4 mx-1 p-2" href="#skills">Conocimientos</a>
-  <a class="btn-dark rounded-4 mx-1 p-2" href="#experience">Experiencia</a>
-  <a class="btn-dark rounded-4 mx-1 p-2" href="#certifications">Certificaciones</a>
-  <a class="btn-dark rounded-4 mx-1 p-2" href="#repositories">Repositorios</a>
+  <a class="btn-gray rounded-4 mx-1 px-2 py-1" href="#about-me"><small>Sobre mí</small></a>
+  <a class="btn-gray rounded-4 mx-1 px-2 py-1" href="#skills"><small>Conocimientos</small></a>
+  <a class="btn-gray rounded-4 mx-1 px-2 py-1" href="#experience"><small>Experiencia</small></a>
+  <a class="btn-gray rounded-4 mx-1 px-2 py-1" href="#certifications"><small>Certificaciones</small></a>
+  <a class="btn-gray rounded-4 mx-1 px-2 py-1" href="#repositories"><small>Repositorios</small></a>
 </div>

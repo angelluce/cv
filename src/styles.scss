@@ -9,12 +9,6 @@ $light: #f8f8f8;
   font-family: 'Montserrat', sans-serif;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 h1, h2, h3, h4, h5, h6 {
   //font-family: 'EB Garamond', serif;
   color: $dark;
@@ -22,32 +16,6 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-}
-
-.content {
-  display: flex;
-  height: 100%;
-}
-
-.left-side {
-  float: left;
-  width: 50%;
-  display: grid;
-  place-items: center;
-}
-
-.right-side {
-  width: 50%;
-  color: $dark;
-}
-
-.left-side, .right-side {
-  padding: 3rem;
-}
-
-.about-me {
-  display: grid;
-  place-items: center;
 }
 
 .grid-card {
@@ -66,6 +34,16 @@ a {
   }
 }
 
+.btn-gray {
+  color: $light;
+  background: #485a7e;
+
+  &:hover {
+    background: #354c7c;
+    color: $light;
+  }
+}
+
 .btn-green {
   color: $light;
   background: #178d1b;
@@ -77,7 +55,7 @@ a {
 }
 
 .btn-light {
-  color: $darker;
+  color: $dark;
   background: $light;
   border: solid 1px #d3d3d3;
 
@@ -87,77 +65,24 @@ a {
   }
 }
 
+.fadeIn {
+  animation: fadeInAnimation 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.ms-n1 {
+  margin-left: -3rem !important;
+}
+
 @media screen and (min-width: 1000px) {
-  .content {
-    flex-direction: row;
-  }
-
-  .left-side {
-    background: linear-gradient(to right, $darker, $dark);
-  }
-
-  .right-side {
-    overflow-y: auto;
-  }
-
-  .left-side, .right-side {
-    width: 50%;
-    padding: 3rem;
-  }
-
   .mobile-only {
     display: none;
   }
 }
 
 @media screen and (max-width: 999px) {
-  .content {
-    flex-direction: column;
-    overflow-y: auto;
-  }
-
-  .left-side {
-    min-height: 100%;
-    background: linear-gradient(to bottom, $darker, $dark);
-  }
-
-  .left-side, .right-side {
-    width: 100%;
-    padding: 3rem 1rem;
-  }
-
   .web-only {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .grid-card {
-    grid-template-columns: 100%;
-  }
-  .btn-dark {
-    color: $light;
-    background: $darker;
-
-    &:hover {
-      background: $darker;
-      color: $light;
-    }
-  }
-
-  .btn-light {
-    color: $darker;
-    background: $light;
-    border: solid 1px #d3d3d3;
-
-    &:hover {
-      background: $darker;
-      color: $light;
-    }
-  }
-
-  .bg-light {
-    background: $light !important;
   }
 }
 
@@ -168,14 +93,4 @@ a {
   100% {
     opacity: 1;
   }
-}
-
-.fadeIn {
-  animation: fadeInAnimation 1s ease-in-out forwards;
-  opacity: 0;
-}
-
-
-.ms-n1 {
-  margin-left: -3rem !important;
 }

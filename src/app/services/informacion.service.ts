@@ -172,7 +172,7 @@ export class InformacionService {
           'TypeScript',
           'HTML - CSS',
           'Python',
-          'Dart',
+          // 'Dart',
           'SQL'
         ]
       },
@@ -184,8 +184,8 @@ export class InformacionService {
           'Ionic',
           'Flask',
           'Express',
-          'React',
-          'Flutter',
+          // 'React',
+          // 'Flutter',
         ]
       },
       {
@@ -217,7 +217,7 @@ export class InformacionService {
           'Desarrollar proyectos de software (aplicaciones web, móviles y escritorio)',
           'Diseñar bases de datos SQL y NoSQL',
           'Análisis de datos',
-          'Desarrollo full stack',
+          // 'Desarrollo full stack',
           'Desplegar aplicaciones en la nube',
         ]
       },
@@ -238,9 +238,7 @@ export class InformacionService {
         fechaInicial: 'jun. 2023',
         fechaFinal: 'sep. 2023',
         actividades: [
-          'Desarrollador front end del proyecto de prevención de lavado de activos: SARF',
-          'Desarrollador front end y responsable de operaciones (devops) del proyecto de contabilidad: CobaSoft',
-          'Desarrollador front end del proyecto de facturación electrónica',
+          'Desarrollador full stack y responsable del proyecto de taxímetro (aplicación web y móvil) FASTAPP.',
         ]
       },
       {
@@ -249,7 +247,11 @@ export class InformacionService {
         fechaInicial: 'feb. 2022',
         fechaFinal: 'may. 2023',
         actividades: [
-          'Desarrollador full stack y responsable del proyecto de taxímetro (aplicación web y móvil) FASTAPP.',
+          'Desarrollador full stack y responsable del proyecto integral de riesgos para cooperativas: Argus Risk Management',
+          'Desarrollador full stack  y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway',
+          'Encargado de operaciones (devops) del proyecto Argus Risk Management',
+          'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management',
+          'Desarrollador full stack del proyecto core financiero: Argus Core'
         ]
       },
       {
