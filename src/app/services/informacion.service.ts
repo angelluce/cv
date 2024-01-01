@@ -199,7 +199,8 @@ export class InformacionService {
       {
         descripcion: 'Repositorios',
         elemento: [
-          'GitHub'
+          'GitHub',
+          'GitLab'
         ]
       }
     ];
@@ -214,8 +215,21 @@ export class InformacionService {
         fechaFinal: 'actilidad',
         actividades: [
           'Desarrollar proyectos de software (aplicaciones web, móviles y escritorio)',
-          'Diseñar bases de datos SQL y No SQL',
+          'Diseñar bases de datos SQL y NoSQL',
+          'Análisis de datos',
+          'Desarrollo full stack',
           'Desplegar aplicaciones en la nube',
+        ]
+      },
+      {
+        cargo: 'Desarrollador front-end',
+        empresa: 'Fuhter Cía Ltda',
+        fechaInicial: 'feb. 2022',
+        fechaFinal: 'may. 2023',
+        actividades: [
+          'Desarrollador front-end del proyecto de prevención de lavado de activos: SARF',
+          'Desarrollador front-end y responsable de operaciones (devops) del proyecto de contabilidad: CobaSoft',
+          'Desarrollador front-end del proyecto de facturación electrónica',
         ]
       },
       {
@@ -274,7 +288,7 @@ export class InformacionService {
       },
       {
         nombre: 'Juego de la vida',
-        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida".',
+        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida" .',
         repo: 'https://github.com/angelluce/game-of-life',
         page: 'https://juego-vida.web.app/'
       },

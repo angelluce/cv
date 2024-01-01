@@ -1,151 +1,116 @@
-<div class="content">
-  <div class="left-side text-center text-light">
-    <div class="">
-      <h1 class="display-2 text-uppercase">{{informacion.perfil.nombre}}</h1>
-      <h5 class="text-uppercase">{{informacion.perfil.profesion}}</h5>
+<div class="container p-3 p-md-5">
+  <!-- HABILIDADES -->
+  <!--<div class="my-5">
+    <h3 class="fw-bold text-center">Habilidades destacadas</h3>
+    <div class="card-sm shadow-sm p-3">
+      <p *ngFor="let habilidad of informacion.habilidades">
+        {{habilidad.descripcion}}</p>
+    </div>
+  </div>-->
 
-      <div class="my-5">
-        <div class="d-flex justify-content-center">
-          <a *ngFor="let redSocial of informacion.contacto.redes"
-             class="text-light p-3 mx-2 my-1"
-             href="{{redSocial.enlace}}" target="_blank" role="button">
-            <i class="pi {{redSocial.icono}}"></i>
-          </a>
-        </div>
-
-        <a class="btn-dark rounded shadow-lg p-3 my-2 mobile-only" type="button"
-           href="/assets/files/ANGEL_LUCERO.pdf" target="_blank">
-          <i class="pi pi-file"> Curriculum vitae</i>
-        </a>
-        <!-- Button trigger modal -->
-        <a class="btn-dark rounded shadow-lg p-3 my-2 web-only" type="button"
-           data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <i class="pi pi-file"> Curriculum vitae</i>
-        </a>
+  <!-- EDUCACION -->
+  <!--<div class="my-5">
+    <h3 class="fw-bold text-center">Formación académica</h3>
+    <div class="card-sm shadow-sm p-3">
+      <div *ngFor="let formacion of informacion.formacion">
+        <p class="fw-normal mt-3 mb-0">{{formacion.titulo}}</p>
+        <small class="fw-normal fst-italic">{{formacion.fecha}}</small>
       </div>
+    </div>
+  </div>-->
 
-      <div class="contact">
-        <p><i class="pi pi-inbox me-3"></i>
-          {{informacion.contacto.correo}}</p>
-        <p><i class="pi pi-map-marker me-3"></i>
-          {{informacion.contacto.direcion}}</p>
+  <!-- SOBRE MÍ -->
+  <div class="my-5" id="about-me">
+    <div class="text-center p-3">
+      <div class="d-flex justify-content-center align-items-end">
+        <img src="assets/images/angel_lucero.jpg" alt="" width="150" class="rounded-circle">
+        <a class="btn-green rounded-4 ms-n1 px-2" href="{{environment.linkedin}}"
+           target="_blank"><small>Disponible</small></a>
+      </div>
+      <h1 class="fw-bold text-center display-3 mt-5">Hola, soy Angel Lucero</h1>
+      <label class="mt-3">+5 años de experiencia. Desarrollador de software. De Cuenca, Ecuador.
+        Gran motivación para seguir aprendiendo y mejorando habilidades técnicas para crecer profesionalmente.
+        Confianza en mi capacidad en contribuir ideas interesantes y novedosas dentro de las distintas fases de
+        desarrollo.</label>
+      <div class="d-flex flex-wrap justify-content-center mt-3">
+        <a class="btn btn-dark m-2" href="{{environment.linkedin}}" target="_blank">
+          <i class="pi pi-linkedin me-2"></i>LinkedIn</a>
+        <a class="btn btn-dark m-2" href="{{environment.github}}" target="_blank">
+          <i class="pi pi-github me-2"></i>GitHub</a>
+        <a class="btn btn-dark m-2" href="mailto:{{environment.email}}" target="_blank">
+          <i class="pi pi-envelope me-2"></i>Gmail</a>
       </div>
     </div>
   </div>
-  <div class="right-side">
-    <!-- HABILIDADES -->
-    <!--<div class="mb-5">
-      <h3 class="fw-bold text-center">Habilidades destacadas</h3>
-      <div class="card-sm shadow-sm p-3">
-        <p *ngFor="let habilidad of informacion.habilidades">
-          {{habilidad.descripcion}}</p>
-      </div>
-    </div>-->
 
-    <!-- EDUCACION -->
-    <!--<div class="mb-5">
-      <h3 class="fw-bold text-center">Formación académica</h3>
-      <div class="card-sm shadow-sm p-3">
-        <div *ngFor="let formacion of informacion.formacion">
-          <p class="fw-normal mt-3 mb-0">{{formacion.titulo}}</p>
-          <small class="fw-normal fst-italic">{{formacion.fecha}}</small>
-        </div>
-      </div>
-    </div>-->
-
-    <!-- SOBRE MÍ -->
-    <div class="mb-5">
-      <h3 class="fw-bold text-center">Sobre mí</h3>
-      <div class="card-sm shadow-sm p-3 d-flex">
-        <div class="about-me col-4">
-          <img src="assets/images/angel_lucero.jpg"
-               alt="" width="50%" class="rounded-circle">
-        </div>
-        <div class="about-me col-7">
-          <label>Gran motivación para seguir aprendiendo y mejorando habilidades laborales para crecer profesionalmente.<br>
-            Confianza en mi capacidad en contribuir ideas interesantes y novedosas dentro de las distintas fases de
-            desarrollo.</label>
+  <!-- CONOCIMIENTOS -->
+  <div class="my-5">
+    <h3 class="fw-bold text-center" id="skills">Conocimientos y aptitudes</h3>
+    <div class="grid-card">
+      <div class="rounded shadow p-3"
+           *ngFor="let conocimiento of informacion.conocimientos">
+        <p class="fw-semibold">{{conocimiento.descripcion}}</p>
+        <div *ngFor="let elemento of conocimiento.elemento">
+          <small>{{elemento}}</small>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- CONOCIMIENTOS -->
-    <div class="mb-5">
-      <h3 class="fw-bold text-center">Conocimientos y aptitudes</h3>
-      <div class="grid-card">
-        <div class="card-sm shadow-sm p-3"
-             *ngFor="let conocimiento of informacion.conocimientos">
-          <p class="fw-semibold">{{conocimiento.descripcion}}</p>
-          <div *ngFor="let elemento of conocimiento.elemento">
-            <small>{{elemento}}</small>
-          </div>
-        </div>
+  <!-- EXPERIENCIA -->
+  <div class="my-5">
+    <h3 class="fw-bold text-center" id="experience">Experiencia laboral</h3>
+    <div class="rounded shadow mb-3 p-3"
+         *ngFor="let experiencia of informacion.experiencia">
+      <h5 class="fw-semibold">{{experiencia.cargo}}</h5>
+      <div class="d-flex justify-content-between">
+        <h6 class="fw-normal">{{experiencia.empresa}}</h6>
+        <small class="fw-light fst-italic">{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
+      </div>
+      <div *ngFor="let actividad of experiencia.actividades">
+        <p class="mt-3 mb-0">{{actividad}}</p>
       </div>
     </div>
+  </div>
 
-    <!-- EXPERIENCIA -->
-    <div class="mb-5">
-      <h3 class="fw-bold text-center">Experiencia laboral</h3>
-      <div class="card-sm shadow-sm mb-3 p-3"
-           *ngFor="let experiencia of informacion.experiencia">
-        <h5 class="fw-semibold">{{experiencia.cargo}}</h5>
+  <!-- CERTIFICACIONES -->
+  <div class="my-5">
+    <h3 class="fw-bold text-center" id="certifications">Certificaciones y licencias</h3>
+    <div class="rounded shadow p-3">
+      <div *ngFor="let certificacion of informacion.certificaciones">
+        <p class="fw-normal mt-3 mb-0">{{certificacion.titulo}}</p>
         <div class="d-flex justify-content-between">
-          <h6 class="fw-normal">{{experiencia.empresa}}</h6>
-          <small class="fw-light fst-italic">{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
-        </div>
-        <div *ngFor="let actividad of experiencia.actividades">
-          <p class="mt-3 mb-0">{{actividad}}</p>
+          <small class="fw-normal">{{certificacion.empresa}}</small>
+          <small class="fw-normal fst-italic">{{certificacion.fecha}}</small>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- REPOSITORIOS -->
-    <div class="mb-5">
-      <h3 class="fw-bold text-center">Repositorios públicos</h3>
-      <div class="grid-card">
-        <div *ngFor="let repositorio of informacion.repositorios"
-             class="card-sm shadow-sm text-center p-3">
-          <h5 class="fw-semibold">{{repositorio.nombre}}</h5>
-          <p class="fw-normal">{{repositorio.descripcion}}</p>
-          <div class="d-flex justify-content-between">
-            <a class="btn-light rounded shadow-sm p-3" target="_blank"
-               href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
-            <a class="btn-light rounded shadow-sm p-3" target="_blank"
-               href="{{repositorio.page}}"><i class="pi pi-eye"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- CERTIFICACIONES -->
-    <div class="">
-      <h3 class="fw-bold text-center">Licencias y certificaciones</h3>
-      <div class="card-sm shadow-sm p-3">
-        <div *ngFor="let certificacion of informacion.certificaciones">
-          <p class="fw-normal mt-3 mb-0">{{certificacion.titulo}}</p>
-          <div class="d-flex justify-content-between">
-            <small class="fw-normal">{{certificacion.empresa}}</small>
-            <small class="fw-normal fst-italic">{{certificacion.fecha}}</small>
-          </div>
+  <!-- REPOSITORIOS -->
+  <div class="my-5">
+    <h3 class="fw-bold text-center" id="repositories">Repositorios públicos</h3>
+    <div class="grid-card">
+      <div *ngFor="let repositorio of informacion.repositorios"
+           class="rounded shadow text-center p-3">
+        <h5 class="fw-semibold">{{repositorio.nombre}}</h5>
+        <p class="fw-normal">{{repositorio.descripcion}}</p>
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-dark mx-1" target="_blank"
+             href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
+          <a class="btn btn-dark mx-1" target="_blank"
+             href="{{repositorio.page}}"><i class="pi pi-globe"></i></a>
         </div>
       </div>
+
     </div>
   </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Curriculum vitae</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <embed src="/assets/files/ANGEL_LUCERO.pdf" type="application/pdf" width="100%" height="600px"/>
-      </div>
-    </div>
-  </div>
+<div class="fixed-bottom bg-white text-center p-3 web-only">
+  <a class="btn-dark rounded-4 mx-1 p-2" href="#about-me">Sobre mí</a>
+  <a class="btn-dark rounded-4 mx-1 p-2" href="#skills">Conocimientos</a>
+  <a class="btn-dark rounded-4 mx-1 p-2" href="#experience">Experiencia</a>
+  <a class="btn-dark rounded-4 mx-1 p-2" href="#certifications">Certificaciones</a>
+  <a class="btn-dark rounded-4 mx-1 p-2" href="#repositories">Repositorios</a>
 </div>

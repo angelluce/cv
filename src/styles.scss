@@ -5,13 +5,19 @@ $darker: #040813;
 $light: #f8f8f8;
 
 * {
-  font-family: 'EB Garamond', serif;
+  //font-family: 'JetBrains Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  //font-family: 'EB Garamond', serif;
+  color: $dark;
 }
 
 a {
@@ -52,11 +58,21 @@ a {
 
 .btn-dark {
   color: $light;
-  background: $darker;
+  background: $dark;
 
   &:hover {
-    background: $light;
-    color: $darker;
+    background: $darker;
+    color: $light;
+  }
+}
+
+.btn-green {
+  color: $light;
+  background: #178d1b;
+
+  &:hover {
+    background: #158018;
+    color: $light;
   }
 }
 
@@ -124,8 +140,8 @@ a {
     background: $darker;
 
     &:hover {
-      background: $light;
-      color: $darker;
+      background: $darker;
+      color: $light;
     }
   }
 
@@ -157,4 +173,9 @@ a {
 .fadeIn {
   animation: fadeInAnimation 1s ease-in-out forwards;
   opacity: 0;
+}
+
+
+.ms-n1 {
+  margin-left: -3rem !important;
 }

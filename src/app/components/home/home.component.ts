@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Informacion} from "../../models/Informacion";
 import {InformacionService} from "../../services/informacion.service";
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-home',
@@ -17,4 +18,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  protected readonly environment = environment;
 }
