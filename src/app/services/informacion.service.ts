@@ -161,7 +161,7 @@ export class InformacionService {
         elemento: [
           'PostgreSQL',
           'Oracle',
-          'Firestore'
+          'Firestore',
         ]
       },
       {
@@ -173,34 +173,44 @@ export class InformacionService {
           'HTML - CSS',
           'Python',
           // 'Dart',
-          'SQL'
+          'SQL',
         ]
       },
       {
-        descripcion: 'Frameworks',
+        descripcion: 'Frameworks/SDKs',
         elemento: [
           'Angular',
           'Spring Boot',
           'Ionic',
           'Flask',
           'Express',
-          // 'React',
+          'React',
           // 'Flutter',
+          // 'Android SDK',
         ]
       },
       {
         descripcion: 'Herramientas en la nube',
         elemento: [
+          'GitHub',
+          'GitLab',
+          'Jira',
+          'Trello',
           'Amazon Web Services',
           'Firebase',
-          'Jira',
+          'Supabase',
         ]
       },
       {
-        descripcion: 'Repositorios',
+        descripcion: 'Otros',
         elemento: [
-          'GitHub',
-          'GitLab'
+          'Git',
+          'Docker',
+          'Postman',
+          'Visual Studio Code',
+          'WebStorm',
+          'IntelliJ IDEA',
+          'PyCharm',
         ]
       }
     ];
@@ -208,6 +218,17 @@ export class InformacionService {
 
   obtenerExperienciaLaboral(): ExperienciaLaboral[] {
     return [
+      {
+        cargo: 'Desarrollador front end',
+        empresa: 'Fuhter Cía Ltda',
+        fechaInicial: 'ago. 2023',
+        fechaFinal: 'actualidad',
+        actividades: [
+          'Desarrollador front end del proyecto de prevención de lavado de activos: SARF',
+          'Desarrollador front end y responsable de operaciones (devops) del proyecto de contabilidad: CobaSoft',
+          'Desarrollador front end del proyecto de facturación electrónica',
+        ]
+      },
       {
         cargo: 'Desarrollador autónomo',
         empresa: 'Freelance',
@@ -222,14 +243,12 @@ export class InformacionService {
         ]
       },
       {
-        cargo: 'Desarrollador front end',
-        empresa: 'Fuhter Cía Ltda',
-        fechaInicial: 'ago. 2023',
-        fechaFinal: 'actualidad',
+        cargo: 'Desarrollador back end',
+        empresa: 'SOFTDEVELOP',
+        fechaInicial: 'jul. 2023',
+        fechaFinal: 'oct. 2023',
         actividades: [
-          'Desarrollador front end del proyecto de prevención de lavado de activos: SARF',
-          'Desarrollador front end y responsable de operaciones (devops) del proyecto de contabilidad: CobaSoft',
-          'Desarrollador front end del proyecto de facturación electrónica',
+          'Desarrollador back end del proyecto del Consejo de la Judicatura: Sistema de gestión de audiencias y notificaciones',
         ]
       },
       {
@@ -284,18 +303,6 @@ export class InformacionService {
   obtenerRepositorios(): Repositorio[] {
     return [
       {
-        nombre: 'NASA APOD',
-        descripcion: 'Consumo desde la API de la NASA para mostrar la imagen astronómica del día.',
-        repo: 'https://github.com/angelluce/nasa',
-        page: 'https://angelluce.github.io/nasa/'
-      },
-      {
-        nombre: 'Chat GPT API',
-        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada.',
-        repo: 'https://github.com/angelluce/chat-gpt-api',
-        page: 'https://angelluce.github.io/chatgpt-api/'
-      },
-      {
         nombre: 'Juego de la vida',
         descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida" .',
         repo: 'https://github.com/angelluce/game-of-life',
@@ -308,7 +315,19 @@ export class InformacionService {
         page: 'https://my-coded-mind.web.app/'
       },
       {
-        nombre: 'Rick and Morty',
+        nombre: 'NASA APOD API',
+        descripcion: 'Consumo desde la API de la NASA para mostrar la imagen astronómica del día.',
+        repo: 'https://github.com/angelluce/nasa',
+        page: 'https://angelluce.github.io/nasa/'
+      },
+      {
+        nombre: 'Chat GPT API',
+        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada.',
+        repo: 'https://github.com/angelluce/chat-gpt-api',
+        page: 'https://angelluce.github.io/chatgpt-api/'
+      },
+      {
+        nombre: 'Rick and Morty API',
         descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie.',
         repo: 'https://github.com/angelluce/rick-and-morty',
         page: 'https://angelluce.github.io/rick-and-morty/'
