@@ -177,7 +177,7 @@ export class InformacionService {
         ]
       },
       {
-        descripcion: 'Frameworks/SDKs',
+        descripcion: 'Frameworks',
         elemento: [
           'Angular',
           'Spring Boot',
