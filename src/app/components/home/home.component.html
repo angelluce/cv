@@ -1,3 +1,4 @@
+<div id="about-me"></div>
 <div class="container p-3 p-md-5">
   <!-- HABILIDADES -->
   <!--<div class="my-5">
@@ -20,7 +21,7 @@
   </div>-->
 
   <!-- SOBRE MÍ -->
-  <div class="my-5" id="about-me">
+  <div class="my-5">
     <div class="text-center p-3">
       <div class="d-flex justify-content-center align-items-end">
         <img src="assets/images/angel_lucero.webp" alt="" width="150px" class="rounded-circle">
@@ -28,7 +29,7 @@
            target="_blank"><small>Disponible</small></a>
       </div>
       <h1 class="fw-bold text-center display-5 mt-5">Hola, soy Angel Lucero</h1>
-      <label class="mt-3">Desarrollador de software con  más de 5 años de experiencia.<br>
+      <label class="mt-3">Desarrollador de software con más de 5 años de experiencia.<br>
         Gran motivación para seguir aprendiendo y mejorando habilidades técnicas para crecer profesionalmente.<br>
         Confianza en mi capacidad en contribuir ideas interesantes y novedosas dentro de las distintas fases de
         desarrollo.</label>
@@ -45,29 +46,31 @@
 
   <!-- EXPERIENCIA -->
   <div class="my-5">
-    <h4 class="fw-bold text-center mb-3" id="experience">Experiencia laboral</h4>
+    <h4 class="fw-bold text-center pt-top mb-3" id="experience">Experiencia laboral</h4>
     <div class="rounded shadow mb-3 p-3"
          *ngFor="let experiencia of informacion.experiencia">
-      <p class="fw-bold m-0">{{experiencia.cargo}}</p>
+      <p class="fw-bold m-0">{{ experiencia.cargo }}</p>
       <div class="d-flex justify-content-between border-bottom">
-        <small class="fw-normal">{{experiencia.empresa}}</small>
-        <small *ngIf="experiencia.fechaFinal === 'actualidad'" class="fw-light fw-bold">{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
-        <small *ngIf="experiencia.fechaFinal !== 'actualidad'" class="fw-light">{{experiencia.fechaInicial}} - {{experiencia.fechaFinal}}</small>
+        <small class="fw-normal">{{ experiencia.empresa }}</small>
+        <small *ngIf="experiencia.fechaFinal === 'actualidad'" class="fw-light fw-bold">{{ experiencia.fechaInicial }}
+          - {{ experiencia.fechaFinal }}</small>
+        <small *ngIf="experiencia.fechaFinal !== 'actualidad'" class="fw-light">{{ experiencia.fechaInicial }}
+          - {{ experiencia.fechaFinal }}</small>
       </div>
       <div *ngFor="let actividad of experiencia.actividades">
-        <p class="mt-3 mb-0">{{actividad}}</p>
+        <p class="mt-3 mb-0">{{ actividad }}</p>
       </div>
     </div>
   </div>
 
   <!-- REPOSITORIOS -->
   <div class="my-5">
-    <h4 class="fw-bold text-center mb-3" id="repositories">Repositorios públicos</h4>
+    <h4 class="fw-bold text-center pt-top mb-3" id="repositories">Repositorios públicos</h4>
     <div class="grid-card">
       <div *ngFor="let repositorio of informacion.repositorios"
            class="rounded shadow text-center p-3">
         <div class="d-flex justify-content-between mb-3 border-bottom">
-          <p class="fw-bold m-0">{{repositorio.nombre}}</p>
+          <p class="fw-bold m-0">{{ repositorio.nombre }}</p>
           <div class="d-flex justify-content-end">
             <a class="text-dark mx-4" target="_blank"
                href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
@@ -75,7 +78,7 @@
                href="{{repositorio.page}}"><i class="pi pi-desktop"></i></a>
           </div>
         </div>
-        <p class="fw-normal">{{repositorio.descripcion}}</p>
+        <p class="fw-normal">{{ repositorio.descripcion }}</p>
       </div>
 
     </div>
@@ -83,13 +86,13 @@
 
   <!-- CONOCIMIENTOS -->
   <div class="my-5">
-    <h4 class="fw-bold text-center mb-3" id="skills">Conocimientos y aptitudes</h4>
+    <h4 class="fw-bold text-center pt-top mb-3" id="skills">Conocimientos y aptitudes</h4>
     <div class="grid-card">
       <div class="rounded shadow p-3"
            *ngFor="let conocimiento of informacion.conocimientos">
-        <p class="fw-bold border-bottom">{{conocimiento.descripcion}}</p>
+        <p class="fw-bold border-bottom">{{ conocimiento.descripcion }}</p>
         <div *ngFor="let elemento of conocimiento.elemento">
-          <small>{{elemento}}</small>
+          <small>{{ elemento }}</small>
         </div>
       </div>
     </div>
@@ -97,13 +100,13 @@
 
   <!-- CERTIFICACIONES -->
   <div class="my-5">
-    <h4 class="fw-bold text-center mb-3" id="certifications">Certificaciones y reconocimientos</h4>
+    <h4 class="fw-bold text-center pt-top mb-3" id="certifications">Certificaciones y reconocimientos</h4>
     <div class="rounded shadow p-3">
       <div *ngFor="let certificacion of informacion.certificaciones">
-        <p class="fw-bold mt-3 mb-0 border-bottom">{{certificacion.titulo}}</p>
+        <p class="fw-bold mt-3 mb-0 border-bottom">{{ certificacion.titulo }}</p>
         <div class="d-flex justify-content-between">
-          <p class="mb-0">{{certificacion.empresa}}</p>
-          <small class="mb-0">{{certificacion.fecha}}</small>
+          <p class="mb-0">{{ certificacion.empresa }}</p>
+          <small class="mb-0">{{ certificacion.fecha }}</small>
         </div>
       </div>
     </div>
