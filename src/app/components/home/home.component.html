@@ -21,7 +21,7 @@
   </div>-->
 
   <!-- SOBRE MÍ -->
-  <section class="my-5">
+  <section class="">
     <div class="text-center p-3">
       <div class="d-flex justify-content-center align-items-end">
         <img src="assets/images/angel_lucero.webp" alt="" width="150px" class="rounded-circle">
@@ -45,7 +45,7 @@
   </section>
 
   <!-- EXPERIENCIA -->
-    <section class="my-5" id="experience">
+    <section class="" id="experience">
       <h4 class="fw-bold text-center pt-top mb-3">Experiencia laboral</h4>
       <div class="rounded shadow mb-3 p-3"
            *ngFor="let experiencia of informacion.experiencia">
@@ -64,7 +64,7 @@
     </section>
 
   <!-- REPOSITORIOS -->
-    <section class="my-5" id="repositories">
+    <section class="" id="repositories">
       <h4 class="fw-bold text-center pt-top mb-3">Repositorios públicos</h4>
       <div class="grid-card">
         <div *ngFor="let repositorio of informacion.repositorios"
@@ -84,7 +84,7 @@
     </section>
 
   <!-- CONOCIMIENTOS -->
-    <section class="my-5" id="skills">
+    <section class="" id="skills">
       <h4 class="fw-bold text-center pt-top mb-3">Conocimientos y aptitudes</h4>
       <div class="grid-card">
         <div class="rounded shadow p-3"
@@ -98,7 +98,7 @@
     </section>
 
   <!-- CERTIFICACIONES -->
-    <section class="my-5" id="certifications">
+    <section class="" id="certifications">
       <h4 class="fw-bold text-center pt-top mb-3">Certificaciones y reconocimientos</h4>
       <div class="rounded shadow p-3">
         <div *ngFor="let certificacion of informacion.certificaciones">
@@ -121,9 +121,14 @@
 <!--</div>-->
 
 <div class="fixed-top bg-dark text-center p-3 web-only">
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('about-me')">Sobre mí</a>
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('experience')">Experiencia</a>
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('repositories')">Repositorios</a>
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('skills')">Conocimientos</a>
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('certifications')">Certificaciones</a>
+  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('about-me')"
+  style="cursor: pointer"><small>Sobre mí</small></a>
+  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('experience')"
+  style="cursor: pointer"><small>Experiencia</small></a>
+  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('repositories')"
+  style="cursor: pointer"><small>Repositorios</small></a>
+  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('skills')"
+  style="cursor: pointer"><small>Conocimientos</small></a>
+  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('certifications')"
+  style="cursor: pointer"><small>Certificaciones</small></a>
 </div>
