@@ -21,7 +21,7 @@
   </div>-->
 
   <!-- SOBRE MÍ -->
-  <section class="">
+  <section class="mt-5 pt-5">
     <div class="text-center p-3">
       <div class="d-flex justify-content-center align-items-end">
         <img src="assets/images/angel_lucero.webp" alt="" width="150px" class="rounded-circle">
@@ -45,90 +45,145 @@
   </section>
 
   <!-- EXPERIENCIA -->
-    <section class="" id="experience">
-      <h4 class="fw-bold text-center pt-top mb-3">Experiencia laboral</h4>
-      <div class="rounded shadow mb-3 p-3"
-           *ngFor="let experiencia of informacion.experiencia">
-        <p class="fw-bold m-0">{{ experiencia.cargo }}</p>
-        <div class="d-flex justify-content-between border-bottom">
-          <small class="fw-normal">{{ experiencia.empresa }}</small>
-          <small *ngIf="experiencia.fechaFinal === 'actualidad'" class="fw-light fw-bold">{{ experiencia.fechaInicial }}
-            - {{ experiencia.fechaFinal }}</small>
-          <small *ngIf="experiencia.fechaFinal !== 'actualidad'" class="fw-light">{{ experiencia.fechaInicial }}
-            - {{ experiencia.fechaFinal }}</small>
-        </div>
-        <div *ngFor="let actividad of experiencia.actividades">
-          <p class="mt-3 mb-0">{{ actividad }}</p>
-        </div>
+  <section class="" id="experience">
+    <h4 class="fw-bold text-center pt-top mb-3">Experiencia laboral</h4>
+    <div class="rounded shadow mb-3 p-3"
+         *ngFor="let experiencia of informacion.experiencia">
+      <p class="fw-bold m-0">{{ experiencia.cargo }}</p>
+      <div class="d-flex justify-content-between border-bottom">
+        <small class="fw-normal">{{ experiencia.empresa }}</small>
+        <small *ngIf="experiencia.fechaFinal === 'actualidad'" class="fw-light fw-bold">{{ experiencia.fechaInicial }}
+          - {{ experiencia.fechaFinal }}</small>
+        <small *ngIf="experiencia.fechaFinal !== 'actualidad'" class="fw-light">{{ experiencia.fechaInicial }}
+          - {{ experiencia.fechaFinal }}</small>
       </div>
-    </section>
+      <div *ngFor="let actividad of experiencia.actividades">
+        <p class="mt-3 mb-0">{{ actividad }}</p>
+      </div>
+    </div>
+  </section>
 
   <!-- REPOSITORIOS -->
-    <section class="" id="repositories">
-      <h4 class="fw-bold text-center pt-top mb-3">Repositorios públicos</h4>
-      <div class="grid-card">
-        <div *ngFor="let repositorio of informacion.repositorios"
-             class="rounded shadow text-center p-3">
-          <div class="d-flex justify-content-between mb-3 border-bottom">
-            <p class="fw-bold m-0">{{ repositorio.nombre }}</p>
-            <div class="d-flex justify-content-end">
-              <a class="text-dark mx-4" target="_blank"
-                 href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
-              <a class="text-dark" target="_blank"
-                 href="{{repositorio.page}}"><i class="pi pi-desktop"></i></a>
-            </div>
+  <section class="" id="repositories">
+    <h4 class="fw-bold text-center pt-top mb-3">Repositorios públicos</h4>
+    <div class="grid-card">
+      <div *ngFor="let repositorio of informacion.repositorios"
+           class="rounded shadow text-center p-3">
+        <div class="d-flex justify-content-between mb-3 border-bottom">
+          <p class="fw-bold m-0">{{ repositorio.nombre }}</p>
+          <div class="d-flex justify-content-end">
+            <a class="text-dark mx-4" target="_blank"
+               href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
+            <a class="text-dark" target="_blank"
+               href="{{repositorio.page}}"><i class="pi pi-desktop"></i></a>
           </div>
-          <p class="fw-normal">{{ repositorio.descripcion }}</p>
         </div>
+        <p class="fw-normal">{{ repositorio.descripcion }}</p>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- CONOCIMIENTOS -->
-    <section class="" id="skills">
-      <h4 class="fw-bold text-center pt-top mb-3">Conocimientos y aptitudes</h4>
-      <div class="grid-card">
-        <div class="rounded shadow p-3"
-             *ngFor="let conocimiento of informacion.conocimientos">
-          <p class="fw-bold border-bottom">{{ conocimiento.descripcion }}</p>
-          <div *ngFor="let elemento of conocimiento.elemento">
-            <small>{{ elemento }}</small>
-          </div>
+  <section class="" id="skills">
+    <h4 class="fw-bold text-center pt-top mb-3">Conocimientos y aptitudes</h4>
+    <div class="grid-card">
+      <div class="rounded shadow p-3"
+           *ngFor="let conocimiento of informacion.conocimientos">
+        <p class="fw-bold border-bottom">{{ conocimiento.descripcion }}</p>
+        <div *ngFor="let elemento of conocimiento.elemento">
+          <small>{{ elemento }}</small>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- CERTIFICACIONES -->
-    <section class="" id="certifications">
-      <h4 class="fw-bold text-center pt-top mb-3">Certificaciones y reconocimientos</h4>
-      <div class="rounded shadow p-3">
-        <div *ngFor="let certificacion of informacion.certificaciones">
-          <p class="fw-bold mt-3 mb-0 border-bottom">{{ certificacion.titulo }}</p>
-          <div class="d-flex justify-content-between">
-            <p class="mb-0">{{ certificacion.empresa }}</p>
-            <small class="mb-0">{{ certificacion.fecha }}</small>
-          </div>
+  <section class="" id="certifications">
+    <h4 class="fw-bold text-center pt-top mb-3">Certificaciones y reconocimientos</h4>
+    <div class="rounded shadow p-3">
+      <div *ngFor="let certificacion of informacion.certificaciones">
+        <p class="fw-bold mt-3 mb-0 border-bottom">{{ certificacion.titulo }}</p>
+        <div class="d-flex justify-content-between">
+          <p class="mb-0">{{ certificacion.empresa }}</p>
+          <small class="mb-0">{{ certificacion.fecha }}</small>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 </div>
 
 <!--<div class="fixed-top bg-dark text-center p-3 web-only">-->
-<!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#about-me">Sobre mí</a>-->
+<!--  <a class="btn bg-light m-2 fw-bold" href="#about-me">Sobre mí</a>-->
 <!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#experience">Experiencia</a>-->
 <!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#repositories">Repositorios</a>-->
 <!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#skills">Conocimientos</a>-->
 <!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#certifications">Certificaciones</a>-->
 <!--</div>-->
 
-<div class="fixed-top bg-dark text-center p-3 web-only">
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('about-me')"
-  style="cursor: pointer"><small>Sobre mí</small></a>
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('experience')"
-  style="cursor: pointer"><small>Experiencia</small></a>
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('repositories')"
-  style="cursor: pointer"><small>Repositorios</small></a>
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('skills')"
-  style="cursor: pointer"><small>Conocimientos</small></a>
-  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" (click)="onClickScrollToElement('certifications')"
-  style="cursor: pointer"><small>Certificaciones</small></a>
+<nav id="navbar" class="navbar bg-dark text-center p-1">
+  <button class="hamburger btn btn-light m-1 pt-2 fw-medium" id="hamburger">
+    <i class="pi pi-bars"></i>
+  </button>
+  <div class="navbar-section menu" id="menu">
+    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('about-me')"
+       style="cursor: pointer"><small>Sobre mí</small></a>
+    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('experience')"
+       style="cursor: pointer"><small>Experiencia</small></a>
+    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('repositories')"
+       style="cursor: pointer"><small>Repositorios</small></a>
+    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('skills')"
+       style="cursor: pointer"><small>Conocimientos</small></a>
+    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('certifications')"
+       style="cursor: pointer"><small>Certificaciones</small></a>
+  </div>
+  <div class="navbar-section buttons">
+    <a class="btn btn-light m-1 pt-2 fw-medium"
+       data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <i class="pi pi-send"></i></a>
+    <a class="btn btn-light m-1 pt-2 fw-medium" (click)="shareProfile()">
+      <i class="pi pi-share-alt"></i></a>
+  </div>
+</nav>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Contactar</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="contactForm">
+          <div class="mb-3">
+            <label for="input0" class="form-label">Nombre</label>
+            <input type="text" class="form-control" formControlName="name" id="input0">
+          </div>
+          <div class="mb-3">
+            <label for="input1" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" formControlName="email" id="input1">
+            <small *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched"
+                   class="text-danger">Correo electrónico es requerido.</small>
+
+          </div>
+          <div class="mb-3">
+            <label for="input2" class="form-label">Contacto</label>
+            <input type="tel" class="form-control" formControlName="contact" id="input2">
+          </div>
+          <div class="mb-3">
+            <label for="input4" class="form-label">Déjame un mensaje <span class="text-danger">*</span></label>
+            <textarea class="form-control" formControlName="message" id="input4" rows="3"></textarea>
+            <small *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched"
+                   class="text-danger">Tu mensaje es requerido.</small>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+<!--        <button type="button" class="btn btn-light" (click)="contactForm.reset()"><i class="pi pi-trash"></i></button>-->
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="pi pi-times"></i></button>
+        <button type="button" class="btn btn-dark" (click)="submitForm()">Enviar</button>
+      </div>
+    </div>
+  </div>
 </div>
