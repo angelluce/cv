@@ -235,11 +235,11 @@ export class InformacionService {
         fechaInicial: 'nov. 2018',
         fechaFinal: 'actualidad',
         actividades: [
-          'Desarrollar proyectos de software (aplicaciones web, móviles y escritorio)',
-          'Diseñar bases de datos SQL y NoSQL',
-          'Análisis de datos',
+          'Desarrollar proyectos de software como: aplicaciones web, aplicaciones móviles y aplicaciones de escritorio',
+          'Diseñar bases de datos SQL y NoSQL utilizando herramientas como: PostgreSQL, Supabase y Firestore',
+          // 'Análisis de datos',
           // 'Desarrollo full stack',
-          'Desplegar aplicaciones en la nube',
+          'Desplegar aplicaciones en la nube utilizando herramientas como: Amazon Web Services, Firebase, Supabase, Vercel y Render',
         ]
       },
       {
@@ -248,7 +248,7 @@ export class InformacionService {
         fechaInicial: 'jul. 2023',
         fechaFinal: 'oct. 2023',
         actividades: [
-          'Desarrollador back end del proyecto del Consejo de la Judicatura: Sistema de gestión de audiencias y notificaciones',
+          'Desarrollador back end del proyecto de PESNOT: Sistema de gestión de audiencias y notificaciones del Consejo de la Judicatura',
         ]
       },
       {
@@ -281,7 +281,7 @@ export class InformacionService {
         actividades: [
           'Diseñador de interfaces de usuario',
           'Desarrollador front end del proyecto Argus Risk Management',
-          'QA del proyecto Argus Risk Management',
+          'Tester del proyecto Argus Risk Management',
         ]
       },
       {
@@ -310,13 +310,13 @@ export class InformacionService {
       },
       {
         nombre: 'Liga de fútbol',
-        descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado',
+        descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado.',
         repo: 'https://github.com/angelluce/football-league-web-ui',
         page: 'https://my-coded-mind.web.app/'
       },
       {
-        nombre: 'NASA APOD API',
-        descripcion: 'Consumo desde la API de la NASA para mostrar la imagen astronómica del día.',
+        nombre: 'NASA API',
+        descripcion: 'Consumo desde la API de la NASA para mostrar la imágenes astronómicas.',
         repo: 'https://github.com/angelluce/nasa',
         page: 'https://angelluce.github.io/nasa/'
       },
