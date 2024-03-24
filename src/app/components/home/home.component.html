@@ -1,25 +1,5 @@
 <section id="about-me"></section>
 <div class="container p-3 p-md-5">
-  <!-- HABILIDADES -->
-  <!--<div class="my-5">
-    <h3 class="fw-bold text-center">Habilidades destacadas</h3>
-    <div class="card-sm shadow-sm p-3">
-      <p *ngFor="let habilidad of informacion.habilidades">
-        {{habilidad.descripcion}}</p>
-    </div>
-  </div>-->
-
-  <!-- EDUCACION -->
-  <!--<div class="my-5">
-    <h3 class="fw-bold text-center">Formación académica</h3>
-    <div class="card-sm shadow-sm p-3">
-      <div *ngFor="let formacion of informacion.formacion">
-        <p class="fw-normal mt-3 mb-0">{{formacion.titulo}}</p>
-        <small class="fw-normal fst-italic">{{formacion.fecha}}</small>
-      </div>
-    </div>
-  </div>-->
-
   <!-- SOBRE MÍ -->
   <section class="mt-5 pt-5">
     <div class="text-center p-3">
@@ -112,14 +92,6 @@
   </section>
 </div>
 
-<!--<div class="fixed-top bg-dark text-center p-3 web-only">-->
-<!--  <a class="btn bg-light m-2 fw-bold" href="#about-me">Sobre mí</a>-->
-<!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#experience">Experiencia</a>-->
-<!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#repositories">Repositorios</a>-->
-<!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#skills">Conocimientos</a>-->
-<!--  <a class="btn-light rounded mx-1 px-2 py-1 fw-bold" href="#certifications">Certificaciones</a>-->
-<!--</div>-->
-
 <nav id="navbar" class="navbar bg-dark text-center p-1">
   <button class="hamburger btn btn-transparent m-1 pt-2 fw-medium" id="hamburger">
     <i class="pi pi-bars"></i>
@@ -137,14 +109,13 @@
        style="cursor: pointer"><small>Certificaciones</small></a>
   </div>
   <div class="navbar-section buttons">
-    <a class="btn btn-light m-1 pt-2 fw-medium"
+    <a class="btn btn-transparent m-1 pt-2 fw-medium"
        data-bs-toggle="modal" data-bs-target="#exampleModal">
       <i class="pi pi-send"></i></a>
-    <a class="btn btn-light m-1 pt-2 fw-medium" (click)="shareProfile()">
+    <a class="btn btn-transparent m-1 pt-2 fw-medium" (click)="shareProfile()">
       <i class="pi pi-share-alt"></i></a>
   </div>
 </nav>
-
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -164,7 +135,6 @@
             <input type="email" class="form-control" formControlName="email" id="input1">
             <small *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched"
                    class="text-danger">Correo electrónico es requerido.</small>
-
           </div>
           <div class="mb-3">
             <label for="input2" class="form-label">Contacto</label>
@@ -177,10 +147,8 @@
                    class="text-danger">Tu mensaje es requerido.</small>
           </div>
         </form>
-
       </div>
       <div class="modal-footer">
-<!--        <button type="button" class="btn btn-light" (click)="contactForm.reset()"><i class="pi pi-trash"></i></button>-->
         <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="pi pi-times"></i></button>
         <button type="button" class="btn btn-dark" (click)="submitForm()">Enviar</button>
       </div>

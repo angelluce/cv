@@ -66,7 +66,6 @@ export class HomeComponent implements OnInit {
   }
 
   submitForm() {
-    console.log(this.contactForm.value);
     if (this.contactForm.invalid) {
       this._alertService.showToast().fire({icon: 'warning', title: 'Algunos campos son requeridos'}).finally();
       return;
@@ -76,9 +75,8 @@ export class HomeComponent implements OnInit {
 
     const data: EmailPayloadInterface = {
       recipient: 'angelluce244@gmail.com',
-      subject: 'Contacto desde el perfil de Angel Lucero',
-      // text: `Mensaje de contacto\n\nNombre: ${this.contactForm.get('name')?.value}\nEmail: ${this.contactForm.get('email')?.value}\nTeléfono: ${this.contactForm.get('contact')?.value}\nMensaje: ${this.contactForm.get('message')?.value}`,
-      htmlContent: `<h2>Mensaje de contacto</h2><p>Nombre: ${this.contactForm.get('name')?.value}</p><p>Email: ${this.contactForm.get('email')?.value}</p><p>Teléfono: ${this.contactForm.get('contact')?.value}</p><p>${this.contactForm.get('message')?.value}</p>`
+      subject: 'Angel Lucero: Mensaje',
+      htmlContent: `<!DOCTYPE html><html lang="es"><head><title>SmartSoft</title><style>* {font-family: sans-serif;font-weight: 500;font-style: normal;text-align: center;color: #4f4f4f;} h1 {color: #120032;} .container {max-width: 500px;margin: 0 auto;} .text-left {text-align: left;} .m-t {margin-top: 2rem;} .text-sm {font-size: 80%;}</style></head><body><div class="container"><h1>Angel Lucero: Mensaje</h1><p class="text-left m-t">Nombre: ${this.contactForm.get('name')?.value}</p><p class="text-left">Correo electrónico: ${this.contactForm.get('email')?.value}</p><p class="text-left">Teléfono: ${this.contactForm.get('contact')?.value}</p><p class="text-left m-t">Mensaje: ${this.contactForm.get('message')?.value}</p><p class="text-sm m-t">© SmartSoft - ${new Date().getFullYear()}</p></div></body></html>`
     }
 
     this._emailService.sendEmail(data).subscribe({
