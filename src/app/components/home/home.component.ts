@@ -21,12 +21,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private informacionService: InformacionService,
               private viewportScroller: ViewportScroller,
+              private _alertService: AlertService,
               private _formBuilder: FormBuilder,
-              private _emailService: EmailService,
-              private _alertService: AlertService) {
+              private _emailService: EmailService) {
     this.informacion = informacionService.obtenerInformacionCompleta();
-
-    // this._alertService.showLoading().fire().finally();
   }
 
   ngOnInit(): void {
@@ -49,6 +47,14 @@ export class HomeComponent implements OnInit {
       menuItems.forEach((item: any) => {
         item.addEventListener('click', toggleMenu);
       });
+
+      // Hide menubar
+      const closeMenuOnClickOutside = (event: MouseEvent) => {
+        if (!menu.contains(event.target as Node) && !hamburger.contains(event.target as Node) && menu.classList.contains('show')) {
+          toggleMenu();
+        }
+      };
+      document.addEventListener('click', closeMenuOnClickOutside);
     }
   }
 
@@ -103,7 +109,7 @@ export class HomeComponent implements OnInit {
     };
 
     if (navigator.canShare(shareData)) {
-      console.log("navigator.canShare() supported. We can use navigator.share() to send the data.");
+      // console.log("navigator.canShare() supported. We can use navigator.share() to send the data.");
       navigator.share(shareData)
         .then(() => console.log('Share was successful.'))
         .catch((error) => console.log('Sharing failed', error));
