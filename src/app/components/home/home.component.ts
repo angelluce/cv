@@ -49,6 +49,14 @@ export class HomeComponent implements OnInit {
       menuItems.forEach((item: any) => {
         item.addEventListener('click', toggleMenu);
       });
+
+      // Hide menubar
+      const closeMenuOnClickOutside = (event: MouseEvent) => {
+        if (!menu.contains(event.target as Node) && !hamburger.contains(event.target as Node) && menu.classList.contains('show')) {
+          toggleMenu();
+        }
+      };
+      document.addEventListener('click', closeMenuOnClickOutside);
     }
   }
 
