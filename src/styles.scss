@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+.bg-dark {
+  background: $dark !important;
+}
+
 .grid-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -85,6 +89,15 @@ a {
   margin-left: -3rem !important;
 }
 
+.pt-top {
+  padding-top: 5rem !important;
+}
+
+.fw-success {
+  color: #4BB543;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 840px) {
   .mobile-only {
     display: none;
@@ -110,19 +123,4 @@ a {
   100% {
     opacity: 1;
   }
-}
-
-
-.bg-dark {
-  background: $dark !important;
-}
-
-.pt-top {
-  padding-top: 5rem !important;
-}
-
-
-.fw-success {
-  color: #4BB543;
-  font-weight: bold;
 }
