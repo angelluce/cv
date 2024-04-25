@@ -25,8 +25,6 @@ export class HomeComponent implements OnInit {
               private _formBuilder: FormBuilder,
               private _emailService: EmailService) {
     this.informacion = informacionService.obtenerInformacionCompleta();
-
-    this._alertService.showLoading().fire().finally();
   }
 
   ngOnInit(): void {
