@@ -3,6 +3,7 @@
 $dark: #061534;
 $darker: #040813;
 $light: #f8f8f8;
+$font-size: 14px;
 
 * {
   //font-family: 'JetBrains Mono', monospace;
@@ -31,6 +32,7 @@ a {
 .btn-dark {
   color: $light;
   background: $dark;
+  font-size: $font-size;
 
   &:hover {
     background: $darker;
@@ -41,6 +43,7 @@ a {
 .btn-gray {
   color: $light;
   background: #485a7e;
+  font-size: $font-size;
 
   &:hover {
     background: #354c7c;
@@ -51,6 +54,8 @@ a {
 .btn-green {
   color: $light;
   background: #178d1b;
+  font-size: $font-size;
+  padding-bottom: 2px;
 
   &:hover {
     background: #158018;
