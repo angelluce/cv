@@ -184,7 +184,7 @@ export class InformacionService {
         elemento: [
           'Angular',
           'Ionic',
-          'Express',
+          'Node.js',
           'Flutter',
           'Android SDK',
           'Spring Boot',
@@ -307,40 +307,49 @@ export class InformacionService {
     return [
       {
         nombre: 'Juego de la vida',
-        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida" .',
-        repo: 'https://github.com/angelluce/game-of-life',
-        page: 'https://juego-vida.web.app/'
+        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida".',
+        repo: 'https://github.com/angelluce/game-of-life'
       },
       {
         nombre: 'Liga de fútbol',
         descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado.',
-        repo: 'https://github.com/angelluce/football-league-web-ui',
-        page: 'https://my-coded-mind.web.app/'
+        repo: 'https://github.com/angelluce/football-league-web-ui'
+      },
+      {
+        nombre: 'Nodejs API',
+        descripcion: 'API REST con Nodejs para realizar operaciones CRUD para departamentos',
+        repo: 'https://github.com/angelluce/customers-api'
+      },
+      {
+        nombre: 'Flask API',
+        descripcion: 'API REST con Flask para realizar operaciones CRUD, almacena los datos en SQLite',
+        repo: 'https://github.com/angelluce/FlaskServer'
       },
       {
         nombre: 'NASA API',
         descripcion: 'Consumo desde la API de la NASA para mostrar la imágenes astronómicas.',
-        repo: 'https://github.com/angelluce/nasa',
-        page: 'https://angelluce.github.io/nasa/'
-      },
-      {
-        nombre: 'Chat GPT API',
-        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada.',
-        repo: 'https://github.com/angelluce/chat-gpt-api',
-        page: 'https://angelluce.github.io/chatgpt-api/'
+        repo: 'https://github.com/angelluce/nasa'
       },
       {
         nombre: 'Rick and Morty API',
         descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie.',
-        repo: 'https://github.com/angelluce/rick-and-morty',
-        page: 'https://angelluce.github.io/rick-and-morty/'
+        repo: 'https://github.com/angelluce/rick-and-morty'
       },
       {
         nombre: 'ChatBot WhatsApp',
         descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios.',
-        repo: 'https://github.com/angelluce/chatbot-whatsapp',
-        page: 'https://angelluce.github.io/chatbot-whatsapp/'
-      }
+        repo: 'https://github.com/angelluce/chatbot-whatsapp'
+      },
+      {
+        nombre: 'Chat GPT API',
+        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada.',
+        repo: 'https://github.com/angelluce/chat-gpt-api'
+      },
+      {
+        nombre: 'Flutter components',
+        descripcion: 'Componentes de Flutter para ser reutilizados en diferentes proyectos',
+        repo: 'https://github.com/angelluce/flutter_components'
+      },
     ];
   }
 

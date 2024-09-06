@@ -15,7 +15,8 @@
            target="_blank"><small>Disponible</small></a>
       </div>
       <h1 class="fw-bold text-center display-5 mt-5">Hola, soy Angel Lucero</h1>
-      <label class="mt-3" style="max-width: 500px">Soy un apasionado desarrollador de software con más de {{years}} años de
+      <label class="mt-3" style="max-width: 500px">Soy un apasionado desarrollador de software con más de {{ years }}
+        años de
         experiencia en metodologías ágiles, bases de datos, back end, front end, ui/ux, operaciones y monitoreo.<br>
         Estoy certificado en Gestión de Proyectos, Scrum, Docker, Python para Ciencia de Datos lo cual refuerza mi
         compromiso con el aprendizaje continuo y la excelencia en mi campo.</label>
@@ -60,10 +61,11 @@
         <div class="d-flex justify-content-between mb-3 border-bottom">
           <p class="fw-bold m-0">{{ repositorio.nombre }}</p>
           <div class="d-flex justify-content-end">
-            <a class="text-dark mx-4" target="_blank" href="{{repositorio.repo}}" aria-label="Código fuente">
-              <i class="pi pi-github"></i></a>
-            <a class="text-dark" target="_blank" href="{{repositorio.page}}" aria-label="Ver proyecto">
-              <i class="pi pi-desktop"></i></a>
+            <a class="text-dark px-3" target="_blank" href="{{repositorio.repo}}" aria-label="Código fuente"
+               data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Ver repositorio">
+             <i class="pi pi-github"></i></a>
+<!--            <a class="text-dark" target="_blank" href="{{repositorio.page}}" aria-label="Ver proyecto">-->
+<!--              <i class="pi pi-desktop"></i></a>-->
           </div>
         </div>
         <p class="fw-normal">{{ repositorio.descripcion }}</p>
@@ -106,19 +108,19 @@
   </button>
   <div class="navbar-section menu" id="menu">
     <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('about-me')"
-       style="cursor: pointer" aria-label="Sobre mí"><small>Sobre mí</small></button>
+            style="cursor: pointer" aria-label="Sobre mí"><small>Sobre mí</small></button>
     <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('experience')"
-       style="cursor: pointer" aria-label="Mi experiencia"><small>Experiencia</small></button>
+            style="cursor: pointer" aria-label="Mi experiencia"><small>Experiencia</small></button>
     <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('repositories')"
-       style="cursor: pointer" aria-label="Mis repositorios"><small>Repositorios</small></button>
+            style="cursor: pointer" aria-label="Mis repositorios"><small>Repositorios</small></button>
     <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('skills')"
-       style="cursor: pointer" aria-label="Mis conocimientos"><small>Conocimientos</small></button>
+            style="cursor: pointer" aria-label="Mis conocimientos"><small>Conocimientos</small></button>
     <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('certifications')"
-       style="cursor: pointer" aria-label="Mis certificaciones"><small>Certificaciones</small></button>
+            style="cursor: pointer" aria-label="Mis certificaciones"><small>Certificaciones</small></button>
   </div>
   <div class="navbar-section buttons">
     <button class="btn btn-transparent m-1 pt-2 fw-medium"
-       data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Ponerme en contacto">
+            data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Ponerme en contacto">
       <i class="pi pi-send"></i></button>
     <button class="btn btn-transparent m-1 pt-2 fw-medium" (click)="shareProfile()" aria-label="Compartir perfil">
       <i class="pi pi-share-alt"></i></button>
