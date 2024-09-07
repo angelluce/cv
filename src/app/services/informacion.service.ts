@@ -239,7 +239,7 @@ export class InformacionService {
       },
       {
         cargo: 'Desarrollador front end',
-        empresa: 'Fuhter Cía Ltda',
+        empresa: 'Fuhrer Cía Ltda',
         fechaInicial: 'ago. 2023',
         fechaFinal: 'actualidad',
         actividades: [
@@ -267,7 +267,7 @@ export class InformacionService {
       },
       {
         cargo: 'Desarrollador full stack',
-        empresa: 'Futura EC Cía Ltda',
+        empresa: 'Futura EC Cía. Ltda.',
         fechaInicial: 'feb. 2022',
         fechaFinal: 'may. 2023',
         actividades: [
@@ -307,12 +307,12 @@ export class InformacionService {
     return [
       {
         nombre: 'Juego de la vida',
-        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida".',
+        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida"',
         repo: 'https://github.com/angelluce/game-of-life'
       },
       {
         nombre: 'Liga de fútbol',
-        descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado.',
+        descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado',
         repo: 'https://github.com/angelluce/football-league-web-ui'
       },
       {
@@ -327,22 +327,22 @@ export class InformacionService {
       },
       {
         nombre: 'NASA API',
-        descripcion: 'Consumo desde la API de la NASA para mostrar la imágenes astronómicas.',
+        descripcion: 'Consumo desde la API de la NASA para mostrar la imágenes astronómicas',
         repo: 'https://github.com/angelluce/nasa'
       },
       {
         nombre: 'Rick and Morty API',
-        descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie.',
+        descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie',
         repo: 'https://github.com/angelluce/rick-and-morty'
       },
       {
         nombre: 'ChatBot WhatsApp',
-        descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios.',
+        descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios',
         repo: 'https://github.com/angelluce/chatbot-whatsapp'
       },
       {
         nombre: 'Chat GPT API',
-        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada.',
+        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada',
         repo: 'https://github.com/angelluce/chat-gpt-api'
       },
       {
