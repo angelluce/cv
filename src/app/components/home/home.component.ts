@@ -18,6 +18,7 @@ import {AlertService} from "../../services/alert.service";
 export class HomeComponent implements OnInit {
   informacion: Informacion;
   contactForm: FormGroup;
+  years: number = 1;
 
   constructor(private informacionService: InformacionService,
               private viewportScroller: ViewportScroller,
@@ -30,6 +31,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.menuResponsive();
     this.initForm();
+    this.years = new Date().getFullYear() - 2021;
   }
 
   menuResponsive(): void {

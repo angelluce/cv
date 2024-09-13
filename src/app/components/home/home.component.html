@@ -1,26 +1,31 @@
 <section id="about-me"></section>
 
-<div class="container p-3 p-md-5">
+<div class="container p-3 p-md-5 fadeIn">
   <!-- SOBRE MÍ -->
-  <section class="mt-5 pt-5">
-    <div class="text-center p-3">
+  <section class="h-home-view">
+    <div class="text-center">
       <div class="d-flex justify-content-center align-items-end">
-        <img src="assets/images/angel_lucero.webp" alt="" width="150px" class="rounded-circle">
-        <a class="btn-green rounded-4 ms-n1 px-2" href="{{environment.linkedin}}"
+        <picture>
+          <source srcset="assets/images/img_192.webp" sizes="(min-width: 768px)" type="image/webp">
+          <source srcset="assets/images/img_256.webp" sizes="(max-width: 767px)" type="image/webp">
+          <img src="assets/images/img_150.webp" title="Angel Lucero" alt="Imagen de Angel Lucero"
+               width="150" height="150" class="rounded-circle" loading="eager" fetchpriority="high">
+        </picture>
+        <a class="btn-green fw-bold rounded-4 ms-n1 px-2" href="{{environment.linkedin}}"
            target="_blank"><small>Disponible</small></a>
       </div>
-      <h1 class="fw-bold text-center display-5 mt-5">Hola, soy Angel Lucero</h1>
-      <label class="mt-3" style="max-width: 500px">Desarrollador de software con más de 5 años de experiencia.<br>
-        Gran motivación para seguir aprendiendo y mejorando habilidades técnicas para crecer profesionalmente.<br>
-        Confianza en mi capacidad en contribuir ideas interesantes y novedosas dentro de las distintas fases de
-        desarrollo.</label>
+      <h1 class="fw-bold text-center display-5 mt-4">Hola, soy Angel Lucero</h1>
+      <label class="mt-3" style="max-width: 500px">Soy un apasionado desarrollador de software con más de {{ years }}
+        años de experiencia en metodologías ágiles, bases de datos, backend, frontend, ui/ux y operaciones.<br><br>
+        Estoy certificado en Gestión de Proyectos, Scrum, Docker, lo cual refuerza mi
+        compromiso con el aprendizaje continuo y la excelencia en mi campo.</label>
       <div class="d-flex flex-wrap justify-content-center mt-4">
         <a class="btn btn-dark shadow-btn m-2" href="{{environment.linkedin}}" target="_blank">
           <i class="pi pi-linkedin me-2 mt-1"></i>LinkedIn</a>
         <a class="btn btn-dark shadow-btn m-2" href="{{environment.github}}" target="_blank">
           <i class="pi pi-github me-2 mt-1"></i>GitHub</a>
       </div>
-      <div class="d-flex flex-wrap justify-content-center mb-5">
+      <div class="d-flex flex-wrap justify-content-center">
         <a class="btn btn-gray shadow-btn m-2" href="mailto:{{environment.email}}" target="_blank">
           <i class="pi pi-envelope me-2 mt-1"></i>angelluce244@gmail.com</a>
       </div>
@@ -29,7 +34,7 @@
 
   <!-- EXPERIENCIA -->
   <section class="" id="experience">
-    <h4 class="fw-bold text-center pt-top mb-3">Experiencia laboral</h4>
+    <h2 class="fw-bold text-center mb-3 pt-top">Experiencia laboral</h2>
     <div class="rounded shadow mb-3 p-3"
          *ngFor="let experiencia of informacion.experiencia">
       <p class="fw-bold m-0">{{ experiencia.cargo }}</p>
@@ -48,17 +53,18 @@
 
   <!-- REPOSITORIOS -->
   <section class="" id="repositories">
-    <h4 class="fw-bold text-center pt-top mb-3">Repositorios públicos</h4>
+    <h2 class="fw-bold text-center mb-3 pt-top">Repositorios públicos</h2>
     <div class="grid-card">
       <div *ngFor="let repositorio of informacion.repositorios"
            class="rounded shadow text-center p-3">
         <div class="d-flex justify-content-between mb-3 border-bottom">
           <p class="fw-bold m-0">{{ repositorio.nombre }}</p>
           <div class="d-flex justify-content-end">
-            <a class="text-dark mx-4" target="_blank"
-               href="{{repositorio.repo}}"><i class="pi pi-github"></i></a>
-            <a class="text-dark" target="_blank"
-               href="{{repositorio.page}}"><i class="pi pi-desktop"></i></a>
+            <a class="text-dark px-3" target="_blank" href="{{repositorio.repo}}" aria-label="Código fuente"
+               data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Ver repositorio">
+             <i class="pi pi-github"></i></a>
+<!--            <a class="text-dark" target="_blank" href="{{repositorio.page}}" aria-label="Ver proyecto">-->
+<!--              <i class="pi pi-desktop"></i></a>-->
           </div>
         </div>
         <p class="fw-normal">{{ repositorio.descripcion }}</p>
@@ -68,7 +74,7 @@
 
   <!-- CONOCIMIENTOS -->
   <section class="" id="skills">
-    <h4 class="fw-bold text-center pt-top mb-3">Conocimientos y aptitudes</h4>
+    <h2 class="fw-bold text-center mb-3 pt-top">Conocimientos y aptitudes</h2>
     <div class="grid-card">
       <div class="rounded shadow p-3"
            *ngFor="let conocimiento of informacion.conocimientos">
@@ -82,7 +88,7 @@
 
   <!-- CERTIFICACIONES -->
   <section class="" id="certifications">
-    <h4 class="fw-bold text-center pt-top mb-3">Certificaciones y reconocimientos</h4>
+    <h2 class="fw-bold text-center mb-3 pt-top">Certificaciones y reconocimientos</h2>
     <div class="rounded shadow p-3">
       <div *ngFor="let certificacion of informacion.certificaciones">
         <p class="fw-bold mt-3 mb-0 border-bottom">{{ certificacion.titulo }}</p>
@@ -96,27 +102,27 @@
 </div>
 
 <nav id="navbar" class="navbar bg-dark text-center p-1">
-  <button class="hamburger btn btn-transparent m-1 pt-2 fw-medium" id="hamburger">
+  <button class="hamburger btn btn-transparent m-1 pt-2 fw-medium" id="hamburger" aria-label="Menú">
     <i class="pi pi-bars"></i>
   </button>
   <div class="navbar-section menu" id="menu">
-    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('about-me')"
-       style="cursor: pointer"><small>Sobre mí</small></a>
-    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('experience')"
-       style="cursor: pointer"><small>Experiencia</small></a>
-    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('repositories')"
-       style="cursor: pointer"><small>Repositorios</small></a>
-    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('skills')"
-       style="cursor: pointer"><small>Conocimientos</small></a>
-    <a class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('certifications')"
-       style="cursor: pointer"><small>Certificaciones</small></a>
+    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('about-me')"
+            style="cursor: pointer" aria-label="Sobre mí"><small>Sobre mí</small></button>
+    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('experience')"
+            style="cursor: pointer" aria-label="Mi experiencia"><small>Experiencia</small></button>
+    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('repositories')"
+            style="cursor: pointer" aria-label="Mis repositorios"><small>Repositorios</small></button>
+    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('skills')"
+            style="cursor: pointer" aria-label="Mis conocimientos"><small>Conocimientos</small></button>
+    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('certifications')"
+            style="cursor: pointer" aria-label="Mis certificaciones"><small>Certificaciones</small></button>
   </div>
   <div class="navbar-section buttons">
-    <a class="btn btn-transparent m-1 pt-2 fw-medium"
-       data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <i class="pi pi-send"></i></a>
-    <a class="btn btn-transparent m-1 pt-2 fw-medium" (click)="shareProfile()">
-      <i class="pi pi-share-alt"></i></a>
+    <button class="btn btn-transparent m-1 pt-2 fw-medium"
+            data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Ponerme en contacto">
+      <i class="pi pi-send"></i></button>
+    <button class="btn btn-transparent m-1 pt-2 fw-medium" (click)="shareProfile()" aria-label="Compartir perfil">
+      <i class="pi pi-share-alt"></i></button>
   </div>
 </nav>
 

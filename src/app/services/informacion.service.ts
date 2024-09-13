@@ -22,10 +22,7 @@ export class InformacionService {
     return {
       nombre: 'Angel Lucero',
       profesion: 'Desarrollador de software',
-      descripcion: 'Gran motivación para continuar aprendiendo y ' +
-        'mejorando habilidades laborales para crecer profesionalmente. ' +
-        'Confianza en mi capacidad de contribuir con ideas interesantes y ' +
-        'novedosas dentro de las distintas fases de desarrollo de software.'
+      descripcion: ''
     };
   }
 
@@ -43,7 +40,7 @@ export class InformacionService {
       },
       {
         nombre: 'Instagram',
-        enlace: 'https://www.instagram.com/angel.lu24/',
+        enlace: 'https://www.instagram.com/angellucero.dev/',
         icono: 'pi-instagram'
       }
     ];
@@ -66,24 +63,24 @@ export class InformacionService {
           'Software del Instituto Superior Tecnológico del Azuay.',
         fecha: 'Cuenca, 2022.'
       },
-      {
-        titulo: 'Bachillerato Técnico - De Servicios ' +
-          'en Administración de Sistemas del ' +
-          'Colegio Técnico Industrial Ricaurte.',
-        fecha: 'Cuenca, 2017.'
-      }
+      // {
+      //   titulo: 'Bachillerato Técnico - De Servicios ' +
+      //     'en Administración de Sistemas del ' +
+      //     'Colegio Técnico Industrial Ricaurte.',
+      //   fecha: 'Cuenca, 2017.'
+      // }
     ];
   }
 
   obtenerCertificaciones(): Certificacion[] {
     return [
       {
-        titulo: 'Docker Essentials: A Developer Introduction',
-        empresa: 'IBM',
-        fecha: 'jul. 2023',
+        titulo: 'Desarrollo de Apps Móviles con Flutter',
+        empresa: 'EELA Institute, Universidad Hemisferios',
+        fecha: 'jul. 2024',
       },
       {
-        titulo: 'Python for Data Science',
+        titulo: 'Docker Essentials: A Developer Introduction',
         empresa: 'IBM',
         fecha: 'jul. 2023',
       },
@@ -91,6 +88,11 @@ export class InformacionService {
         titulo: 'Fundamentos en Gestión de Proyectos',
         empresa: 'soylider.net',
         fecha: 'jun. 2023',
+      },
+      {
+        titulo: 'Python for Data Science',
+        empresa: 'IBM',
+        fecha: 'jul. 2023',
       },
       {
         titulo: 'Scrum Foundation Professional Certificate SFPC',
@@ -112,16 +114,16 @@ export class InformacionService {
         empresa: 'Netzun',
         fecha: 'jun. 2021',
       },
-      {
-        titulo: 'NDG Linux Unhatched',
-        empresa: 'Cisco Networking Academy',
-        fecha: 'ago. 2020',
-      },
-      {
-        titulo: 'Introducción a IoT',
-        empresa: 'Cisco Networking Academy',
-        fecha: 'ago. 2020',
-      }
+      // {
+      //   titulo: 'NDG Linux Unhatched',
+      //   empresa: 'Cisco Networking Academy',
+      //   fecha: 'ago. 2020',
+      // },
+      // {
+      //   titulo: 'Introducción a IoT',
+      //   empresa: 'Cisco Networking Academy',
+      //   fecha: 'ago. 2020',
+      // }
     ]
   }
 
@@ -159,20 +161,21 @@ export class InformacionService {
       {
         descripcion: 'Bases de datos',
         elemento: [
-          'PostgreSQL',
-          'Oracle',
+          'Postgresql',
           'Firestore',
+          'Oracle',
         ]
       },
       {
         descripcion: 'Lenguajes',
         elemento: [
-          'Java',
-          'JavaScript',
           'TypeScript',
-          'HTML - CSS',
+          'JavaScript',
+          'HTML',
+          'CSS',
+          'Java',
           'Python',
-          // 'Dart',
+          'Dart',
           'SQL',
         ]
       },
@@ -180,13 +183,14 @@ export class InformacionService {
         descripcion: 'Frameworks',
         elemento: [
           'Angular',
-          'Spring Boot',
           'Ionic',
+          'Node.js',
+          'Flutter',
+          'Android SDK',
+          'Spring Boot',
+          'Fast API',
           'Flask',
-          'Express',
           'React',
-          // 'Flutter',
-          // 'Android SDK',
         ]
       },
       {
@@ -194,23 +198,27 @@ export class InformacionService {
         elemento: [
           'GitHub',
           'GitLab',
-          'Jira',
-          'Trello',
-          'Amazon Web Services',
           'Firebase',
           'Supabase',
+          'Jira',
+          'Taiga',
+          'Trello',
+          'Render',
+          'Amazon Web Services',
         ]
       },
       {
         descripcion: 'Otros',
         elemento: [
           'Git',
-          'Docker',
+          'Json',
           'Postman',
-          'Visual Studio Code',
+          'Markdown',
           'WebStorm',
           'IntelliJ IDEA',
+          'Visual Studio Code',
           'PyCharm',
+          'Docker',
         ]
       }
     ];
@@ -219,27 +227,24 @@ export class InformacionService {
   obtenerExperienciaLaboral(): ExperienciaLaboral[] {
     return [
       {
-        cargo: 'Desarrollador front end',
-        empresa: 'Fuhter Cía Ltda',
-        fechaInicial: 'ago. 2023',
-        fechaFinal: 'actualidad',
-        actividades: [
-          'Desarrollador front end del proyecto de prevención de lavado de activos: SARF',
-          'Desarrollador front end y responsable de operaciones (devops) del proyecto de contabilidad: CobaSoft',
-          'Desarrollador front end del proyecto de facturación electrónica',
-        ]
-      },
-      {
         cargo: 'Desarrollador autónomo',
         empresa: 'Freelance',
-        fechaInicial: 'nov. 2018',
+        fechaInicial: 'nov. 2021',
         fechaFinal: 'actualidad',
         actividades: [
           'Desarrollar proyectos de software como: aplicaciones web, aplicaciones móviles y aplicaciones de escritorio',
           'Diseñar bases de datos SQL y NoSQL utilizando herramientas como: PostgreSQL, Supabase y Firestore',
-          // 'Análisis de datos',
-          // 'Desarrollo full stack',
           'Desplegar aplicaciones en la nube utilizando herramientas como: Amazon Web Services, Firebase, Supabase, Vercel y Render',
+        ]
+      },
+      {
+        cargo: 'Desarrollador front end',
+        empresa: 'Fuhrer Cía Ltda',
+        fechaInicial: 'ago. 2023',
+        fechaFinal: 'actualidad',
+        actividades: [
+          'Desarrollador front-end y encargado del proyecto: SARF, actualmente más de 25 cooperativas son parte de este proyecto.',
+          'Desarrollador full stack y responsable de proyectos secundarios de la entidad, mismos que se encuentran en el mercado nacional.',
         ]
       },
       {
@@ -262,14 +267,13 @@ export class InformacionService {
       },
       {
         cargo: 'Desarrollador full stack',
-        empresa: 'Futura EC Cía Ltda',
+        empresa: 'Futura EC Cía. Ltda.',
         fechaInicial: 'feb. 2022',
         fechaFinal: 'may. 2023',
         actividades: [
-          'Desarrollador full stack y responsable del proyecto integral de riesgos para cooperativas: Argus Risk Management',
-          'Desarrollador full stack  y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway',
-          'Encargado de operaciones (devops) del proyecto Argus Risk Management',
+          'Desarrollador full stack y devops del proyecto Argus Risk Management, con múltiples cooperativas siendo parte de este proyecto',
           'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management',
+          'Desarrollador full stack, devops y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway',
           'Desarrollador full stack del proyecto core financiero: Argus Core'
         ]
       },
@@ -279,9 +283,8 @@ export class InformacionService {
         fechaInicial: 'nov. 2021',
         fechaFinal: 'ene. 2022',
         actividades: [
-          'Diseñador de interfaces de usuario',
+          'Diseñador de interfaces de usuario del proyecto Argus Risk Management',
           'Desarrollador front end del proyecto Argus Risk Management',
-          'Tester del proyecto Argus Risk Management',
         ]
       },
       {
@@ -290,10 +293,10 @@ export class InformacionService {
         fechaInicial: 'may. 2017',
         fechaFinal: 'jun. 2017',
         actividades: [
-          'Reparar equipos informáticos',
-          'Instalar software y hardware',
-          'Realizar mantenimiento preventivo y correctivo de equipos informáticos',
-          'Realizar cableado estructurado',
+          'Reparar equipos informáticos (laptop, computadoras de escritorio, impresoras, etc.)',
+          'Instalar software en equipos informáticos (sistemas operativos, programas, etc.)',
+          'Realizar mantenimiento preventivo y correctivo de equipos informáticos y redes',
+          'Realizar cableado estructurado para redes domésticas y corporativas',
           'Servicio de atención al cliente'
         ]
       }
@@ -304,40 +307,49 @@ export class InformacionService {
     return [
       {
         nombre: 'Juego de la vida',
-        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida" .',
-        repo: 'https://github.com/angelluce/game-of-life',
-        page: 'https://juego-vida.web.app/'
+        descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida"',
+        repo: 'https://github.com/angelluce/game-of-life'
       },
       {
         nombre: 'Liga de fútbol',
-        descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado.',
-        repo: 'https://github.com/angelluce/football-league-web-ui',
-        page: 'https://my-coded-mind.web.app/'
+        descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado',
+        repo: 'https://github.com/angelluce/football-league-web-ui'
+      },
+      {
+        nombre: 'Nodejs API',
+        descripcion: 'API REST con Nodejs para realizar operaciones CRUD para departamentos',
+        repo: 'https://github.com/angelluce/customers-api'
+      },
+      {
+        nombre: 'Flask API',
+        descripcion: 'API REST con Flask para realizar operaciones CRUD, almacena los datos en SQLite',
+        repo: 'https://github.com/angelluce/FlaskServer'
       },
       {
         nombre: 'NASA API',
-        descripcion: 'Consumo desde la API de la NASA para mostrar la imágenes astronómicas.',
-        repo: 'https://github.com/angelluce/nasa',
-        page: 'https://angelluce.github.io/nasa/'
-      },
-      {
-        nombre: 'Chat GPT API',
-        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada.',
-        repo: 'https://github.com/angelluce/chat-gpt-api',
-        page: 'https://angelluce.github.io/chatgpt-api/'
+        descripcion: 'Consumo desde la API de la NASA para mostrar la imágenes astronómicas',
+        repo: 'https://github.com/angelluce/nasa'
       },
       {
         nombre: 'Rick and Morty API',
-        descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie.',
-        repo: 'https://github.com/angelluce/rick-and-morty',
-        page: 'https://angelluce.github.io/rick-and-morty/'
+        descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie',
+        repo: 'https://github.com/angelluce/rick-and-morty'
       },
       {
         nombre: 'ChatBot WhatsApp',
-        descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios.',
-        repo: 'https://github.com/angelluce/chatbot-whatsapp',
-        page: 'https://angelluce.github.io/chatbot-whatsapp/'
-      }
+        descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios',
+        repo: 'https://github.com/angelluce/chatbot-whatsapp'
+      },
+      {
+        nombre: 'Chat GPT API',
+        descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada',
+        repo: 'https://github.com/angelluce/chat-gpt-api'
+      },
+      {
+        nombre: 'Flutter components',
+        descripcion: 'Componentes de Flutter para ser reutilizados en diferentes proyectos',
+        repo: 'https://github.com/angelluce/flutter_components'
+      },
     ];
   }
 
