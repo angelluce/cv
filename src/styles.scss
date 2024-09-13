@@ -30,6 +30,13 @@ a {
   grid-gap: 16px;
 }
 
+.h-home-view {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-dark {
   color: $light;
   background: $dark;
