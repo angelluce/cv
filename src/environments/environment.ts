@@ -9,6 +9,7 @@ export const environment = {
   // links
   linkedin: 'https://www.linkedin.com/in/angellucero/',
   github: 'https://github.com/angelluce',
+  gitlab: 'https://gitlab.com/angellucero',
 };
 
 /*
