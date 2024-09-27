@@ -232,9 +232,11 @@ export class InformacionService {
         fechaInicial: 'nov. 2021',
         fechaFinal: 'actualidad',
         actividades: [
-          'Desarrollar proyectos de software como: aplicaciones web, aplicaciones móviles y aplicaciones de escritorio',
-          'Diseñar bases de datos SQL y NoSQL utilizando herramientas como: PostgreSQL, Supabase y Firestore',
-          'Desplegar aplicaciones en la nube utilizando herramientas como: Amazon Web Services, Firebase, Supabase, Vercel y Render',
+          'Desarrollar proyectos de software como: aplicaciones web (PWA, SaaS), aplicaciones móviles multiplataforma (Android) y aplicaciones de escritorio.',
+          'Diseñar bases de datos relacionales y no relacionales utilizando herramientas como: PostgreSQL, Supabase y Firestore de Firebase.',
+          'Desplegar correctamente aplicaciones en la nube utilizando servicios de empresas como: Amazon Web Services, Firebase, Vercel y Render.',
+          'Asesorar a empresas, negocios, emprendedores en la toma de decisiones tecnológicas para la implementación de software.',
+          'Realizar mantenimiento y soporte técnico de aplicaciones web y móviles.',
         ],
         etiquetas: [
           'Node.js',
@@ -243,7 +245,6 @@ export class InformacionService {
           'React',
           'PWA',
           'SaaS',
-          'Electron',
           'Flutter',
           'Android',
           'Spring Boot',
@@ -266,6 +267,7 @@ export class InformacionService {
           'Trello',
           'Vercel',
           'Render',
+          'Electron',
           'Google Cloud Platform',
           'Amazon Web Services',
         ]
@@ -277,7 +279,8 @@ export class InformacionService {
         fechaFinal: 'actualidad',
         actividades: [
           'Desarrollador front-end y encargado del proyecto: SARF, actualmente más de 25 cooperativas son parte de este proyecto.',
-          'Desarrollador full stack y responsable de proyectos secundarios de la entidad, mismos que se encuentran en el mercado nacional.',
+          'Desarrollador front-end del proyecto SHUK, aplicación móvil para el comercio de partes y repuestos, disponible para Android e IOS.',
+          'Desarrollador full stack de proyectos secundarios.',
         ],
         etiquetas: [
           'Angular',
@@ -305,7 +308,7 @@ export class InformacionService {
         fechaInicial: 'jul. 2023',
         fechaFinal: 'oct. 2023',
         actividades: [
-          'Desarrollador back end del proyecto de PESNOT: Sistema de gestión de audiencias y notificaciones del Consejo de la Judicatura',
+          'Desarrollador back end del proyecto de PESNOT: Sistema de gestión de audiencias y notificaciones del Consejo de la Judicatura.',
         ],
         etiquetas: [
           'Spring Boot',
@@ -337,10 +340,10 @@ export class InformacionService {
         fechaInicial: 'feb. 2022',
         fechaFinal: 'may. 2023',
         actividades: [
-          'Desarrollador full stack y devops del proyecto Argus Risk Management, con múltiples cooperativas siendo parte de este proyecto',
-          'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management',
-          'Desarrollador full stack, devops y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway',
-          'Desarrollador full stack del proyecto core financiero: Argus Core'
+          'Desarrollador full stack y devops del proyecto Argus Risk Management, con múltiples cooperativas siendo parte de este proyecto.',
+          'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management.',
+          'Desarrollador full stack, devops y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway.',
+          'Desarrollador full stack del proyecto core financiero: Argus Core.'
         ],
         etiquetas: [
           'Angular',
@@ -367,8 +370,8 @@ export class InformacionService {
         fechaInicial: 'nov. 2021',
         fechaFinal: 'ene. 2022',
         actividades: [
-          'Diseñador de interfaces de usuario del proyecto Argus Risk Management',
-          'Desarrollador front end del proyecto Argus Risk Management',
+          'Diseñador de interfaces de usuario del proyecto Argus Risk Management.',
+          'Desarrollador front end del proyecto Argus Risk Management.',
         ],
         etiquetas: [
           'Angular',
@@ -388,11 +391,11 @@ export class InformacionService {
         fechaInicial: 'may. 2017',
         fechaFinal: 'jun. 2017',
         actividades: [
-          'Reparar equipos informáticos (laptop, computadoras de escritorio, impresoras, etc.)',
-          'Instalar software en equipos informáticos (sistemas operativos, programas, etc.)',
-          'Realizar mantenimiento preventivo y correctivo de equipos informáticos y redes',
-          'Realizar cableado estructurado para redes domésticas y corporativas',
-          'Servicio de atención al cliente'
+          'Reparar equipos informáticos (laptop, computadoras de escritorio, impresoras, etc.).',
+          'Instalar software en equipos informáticos (sistemas operativos, programas, etc.).',
+          'Realizar mantenimiento preventivo y correctivo de equipos informáticos y redes.',
+          'Realizar cableado estructurado para redes domésticas y corporativas.',
+          'Servicio de atención al cliente.'
         ],
         etiquetas: [
           'Ofimática',
