@@ -4,4 +4,5 @@ export class ExperienciaLaboral {
   fechaInicial: string;
   fechaFinal: string;
   actividades: string[];
+  etiquetas: string[];
 }

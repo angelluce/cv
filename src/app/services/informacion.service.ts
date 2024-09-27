@@ -235,6 +235,39 @@ export class InformacionService {
           'Desarrollar proyectos de software como: aplicaciones web, aplicaciones móviles y aplicaciones de escritorio',
           'Diseñar bases de datos SQL y NoSQL utilizando herramientas como: PostgreSQL, Supabase y Firestore',
           'Desplegar aplicaciones en la nube utilizando herramientas como: Amazon Web Services, Firebase, Supabase, Vercel y Render',
+        ],
+        etiquetas: [
+          'Node.js',
+          'Angular',
+          'Ionic',
+          'React',
+          'PWA',
+          'SaaS',
+          'Electron',
+          'Flutter',
+          'Android',
+          'Spring Boot',
+          'Express',
+          'Fast API',
+          'Flask',
+          'Firebase',
+          'Firestore',
+          'Supabase',
+          'Postgresql',
+          'Docker',
+          'GitHub',
+          'GitLab',
+          'GitHub Pages',
+          'GitHub Actions',
+          'PrimeNG',
+          'Bootstrap',
+          'PrimeFlex',
+          'Jira',
+          'Trello',
+          'Vercel',
+          'Render',
+          'Google Cloud Platform',
+          'Amazon Web Services',
         ]
       },
       {
@@ -245,6 +278,25 @@ export class InformacionService {
         actividades: [
           'Desarrollador front-end y encargado del proyecto: SARF, actualmente más de 25 cooperativas son parte de este proyecto.',
           'Desarrollador full stack y responsable de proyectos secundarios de la entidad, mismos que se encuentran en el mercado nacional.',
+        ],
+        etiquetas: [
+          'Angular',
+          'Ionic',
+          'Flutter',
+          'Fast API',
+          'SaaS',
+          'PWA',
+          'Android',
+          'IOS',
+          'Linux',
+          'SSH',
+          'Docker',
+          'GitLab',
+          'Postman',
+          'Firebase',
+          'Keycloak',
+          'Docker',
+          'Taiga',
         ]
       },
       {
@@ -254,6 +306,14 @@ export class InformacionService {
         fechaFinal: 'oct. 2023',
         actividades: [
           'Desarrollador back end del proyecto de PESNOT: Sistema de gestión de audiencias y notificaciones del Consejo de la Judicatura',
+        ],
+        etiquetas: [
+          'Spring Boot',
+          'MySQL',
+          'GitHub',
+          'Postman',
+          'Docker',
+          'Trello',
         ]
       },
       {
@@ -263,6 +323,12 @@ export class InformacionService {
         fechaFinal: 'sep. 2023',
         actividades: [
           'Desarrollador full stack y responsable del proyecto de taxímetro (aplicación web y móvil) FASTAPP.',
+        ],
+        etiquetas: [
+          'Angular',
+          'Android',
+          'GitHub',
+          'Firebase',
         ]
       },
       {
@@ -275,6 +341,24 @@ export class InformacionService {
           'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management',
           'Desarrollador full stack, devops y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway',
           'Desarrollador full stack del proyecto core financiero: Argus Core'
+        ],
+        etiquetas: [
+          'Angular',
+          'React',
+          'Spring Boot',
+          'Flask',
+          'Postgresql',
+          'Oracle',
+          'Amazon Web Services',
+          'GitHub',
+          'Figma',
+          'SaaS',
+          'Jira',
+          'Keycloak',
+          'Postman',
+          'Docker',
+          'Linux',
+          'SSH',
         ]
       },
       {
@@ -285,6 +369,17 @@ export class InformacionService {
         actividades: [
           'Diseñador de interfaces de usuario del proyecto Argus Risk Management',
           'Desarrollador front end del proyecto Argus Risk Management',
+        ],
+        etiquetas: [
+          'Angular',
+          'Spring Boot',
+          'Flask',
+          'Postgresql',
+          'Amazon Web Services',
+          'Postman',
+          'GitHub',
+          'Figma',
+          'SaaS',
         ]
       },
       {
@@ -298,6 +393,12 @@ export class InformacionService {
           'Realizar mantenimiento preventivo y correctivo de equipos informáticos y redes',
           'Realizar cableado estructurado para redes domésticas y corporativas',
           'Servicio de atención al cliente'
+        ],
+        etiquetas: [
+          'Ofimática',
+          'Hardware',
+          'Redes',
+          'Atención al cliente'
         ]
       }
     ];
@@ -308,47 +409,56 @@ export class InformacionService {
       {
         nombre: 'Juego de la vida',
         descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida"',
-        repo: 'https://github.com/angelluce/game-of-life'
+        repo: 'https://github.com/angelluce/game-of-life',
+        etiquetas: ['HTML', ' CSS', 'JavaScript', 'Firebase']
       },
       {
         nombre: 'Liga de fútbol',
         descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado',
-        repo: 'https://github.com/angelluce/football-league-web-ui'
+        repo: 'https://github.com/angelluce/football-league-web-ui',
+        etiquetas: ['Angular', 'Bootstrap']
       },
       {
         nombre: 'Nodejs API',
         descripcion: 'API REST con Nodejs para realizar operaciones CRUD para departamentos',
-        repo: 'https://github.com/angelluce/customers-api'
+        repo: 'https://github.com/angelluce/customers-api',
+        etiquetas: ['Node.js', 'Express', 'PostgreSQL']
       },
       {
         nombre: 'Flask API',
         descripcion: 'API REST con Flask para realizar operaciones CRUD, almacena los datos en SQLite',
-        repo: 'https://github.com/angelluce/FlaskServer'
+        repo: 'https://github.com/angelluce/FlaskServer',
+        etiquetas: ['Flask', 'Jinga', 'Bootstrap', 'SQLite']
       },
       {
         nombre: 'NASA API',
         descripcion: 'Consumo desde la API de la NASA para mostrar la imágenes astronómicas',
-        repo: 'https://github.com/angelluce/nasa'
+        repo: 'https://github.com/angelluce/nasa',
+        etiquetas: ['Angular', 'PrimeNG', 'NASA API']
       },
       {
         nombre: 'Rick and Morty API',
         descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie',
-        repo: 'https://github.com/angelluce/rick-and-morty'
+        repo: 'https://github.com/angelluce/rick-and-morty',
+        etiquetas: ['Angular', 'PrimeNG', 'Rick and Morty API']
       },
       {
         nombre: 'ChatBot WhatsApp',
         descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios',
-        repo: 'https://github.com/angelluce/chatbot-whatsapp'
+        repo: 'https://github.com/angelluce/chatbot-whatsapp',
+        etiquetas: ['Node.js', 'Express', 'PM2']
       },
       {
         nombre: 'Chat GPT API',
         descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada',
-        repo: 'https://github.com/angelluce/chat-gpt-api'
+        repo: 'https://github.com/angelluce/chat-gpt-api',
+        etiquetas: ['Python', 'OpenAI']
       },
       {
         nombre: 'Flutter components',
         descripcion: 'Componentes de Flutter para ser reutilizados en diferentes proyectos',
-        repo: 'https://github.com/angelluce/flutter_components'
+        repo: 'https://github.com/angelluce/flutter_components',
+        etiquetas: ['Flutter']
       },
     ];
   }
