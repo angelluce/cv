@@ -66,16 +66,16 @@
     <h2 class="fw-bold text-center mb-3 pt-top">Repositorios públicos</h2>
     <div class="grid-card">
       <div *ngFor="let repositorio of informacion.repositorios" class="rounded shadow text-center p-3">
-        <div class="d-flex justify-content-between mb-3 border-bottom">
-          <p class="fw-bold m-0">{{ repositorio.nombre }}</p>
-          <div class="d-flex justify-content-end">
-            <a class="text-dark px-3" target="_blank" href="{{repositorio.repo}}" aria-label="Código fuente"
-               data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Ver repositorio">
-              <i class="pi pi-github"></i></a>
+        <p class="fw-bold border-bottom">{{ repositorio.nombre }}</p>
+<!--        <div class="d-flex justify-content-between mb-3 border-bottom">-->
+<!--          <div class="d-flex justify-content-end">-->
+<!--            <a class="text-dark px-3" target="_blank" href="{{repositorio.repo}}" aria-label="Código fuente"-->
+<!--               data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Ver repositorio">-->
+<!--              <i class="pi pi-github"></i></a>-->
             <!--            <a class="text-dark" target="_blank" href="{{repositorio.page}}" aria-label="Ver proyecto">-->
             <!--              <i class="pi pi-desktop"></i></a>-->
-          </div>
-        </div>
+<!--          </div>-->
+<!--        </div>-->
         <p class="fw-normal">{{ repositorio.descripcion }}</p>
         <div class="d-flex flex-wrap gap-3 mt-3">
           <span *ngFor="let etiqueta of repositorio.etiquetas" class="badge rounded-pill text-body"
