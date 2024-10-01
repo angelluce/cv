@@ -407,6 +407,12 @@ export class InformacionService {
         etiquetas: ['HTML', ' CSS', 'JavaScript', 'Firebase']
       },
       {
+        nombre: 'Grabador de pantalla',
+        descripcion: 'Proyecto para probar habilidades de JS, permite grabar la pantalla del navegador',
+        repo: 'https://github.com/angelluce/screen_recorder',
+        etiquetas: ['HTML', ' CSS', 'JavaScript']
+      },
+      {
         nombre: 'Liga de fútbol',
         descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado',
         repo: 'https://github.com/angelluce/football-league-web-ui',
