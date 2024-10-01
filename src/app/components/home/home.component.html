@@ -101,10 +101,10 @@
   <!-- CERTIFICACIONES -->
   <section class="" id="certifications">
     <h2 class="fw-bold text-center mb-3 pt-top">Certificaciones y reconocimientos</h2>
-    <div class="rounded shadow p-3">
+    <div class="rounded shadow p-3 d-flex flex-column gap-3">
       <div *ngFor="let certificacion of informacion.certificaciones">
-        <p class="fw-bold mt-3 mb-0 border-bottom">{{ certificacion.titulo }}</p>
-        <div class="d-flex justify-content-between">
+        <p class="fw-bold mb-0">{{ certificacion.titulo }}</p>
+        <div class="d-flex justify-content-between border-bottom">
           <p class="mb-0">{{ certificacion.empresa }}</p>
           <small class="mb-0">{{ certificacion.fecha }}</small>
         </div>

@@ -227,7 +227,7 @@ export class InformacionService {
   obtenerExperienciaLaboral(): ExperienciaLaboral[] {
     return [
       {
-        cargo: 'Desarrollador autónomo',
+        cargo: 'Desarrollador independiente',
         empresa: 'Freelance',
         fechaInicial: 'nov. 2021',
         fechaFinal: 'actualidad',
@@ -270,7 +270,7 @@ export class InformacionService {
       },
       {
         cargo: 'Desarrollador front end',
-        empresa: 'Fuhrer Cía Ltda',
+        empresa: 'Führer Cía Ltda',
         fechaInicial: 'ago. 2023',
         fechaFinal: 'actualidad',
         actividades: [
