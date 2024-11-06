@@ -120,5 +120,18 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  generarColorPastelAleatorio(): string {
+    function componenteHexadecimal(c: number): string {
+      const hex = c.toString(16);
+      return hex.length === 1 ? "0" + hex : hex;
+    }
+
+    const r = Math.floor(Math.random() * 64) + 192; // Valores entre 192 y 255 (más claros)
+    const g = Math.floor(Math.random() * 64) + 192;
+    const b = Math.floor(Math.random() * 64) + 192;
+
+    return "#" + componenteHexadecimal(r) + componenteHexadecimal(g) + componenteHexadecimal(b);
+  }
+
   protected readonly environment = environment;
 }

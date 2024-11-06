@@ -1,166 +1,160 @@
 <section id="about-me"></section>
 
 <div class="container p-3 p-md-5 fadeIn">
-  <!-- SOBRE MÍ -->
-  <section class="h-home-view">
-    <div class="text-center">
-      <div class="d-flex justify-content-center align-items-end">
-        <picture>
-          <source srcset="assets/images/img_192.webp" sizes="(min-width: 768px)" type="image/webp">
-          <source srcset="assets/images/img_256.webp" sizes="(max-width: 767px)" type="image/webp">
-          <img src="assets/images/img_150.webp" title="Angel Lucero" alt="Imagen de Angel Lucero"
-               width="150" height="150" class="rounded-circle" loading="eager" fetchpriority="high">
-        </picture>
-        <a class="btn-green fw-bold rounded-4 ms-n1 px-2" href="{{environment.linkedin}}"
-           target="_blank"><small>Disponible</small></a>
-      </div>
-      <h1 class="fw-bold text-center display-5 mt-4">Hola, soy Angel Lucero</h1>
-      <label class="mt-3" style="max-width: 500px">Soy un apasionado desarrollador de software con más de {{ years }}
+    <!-- SOBRE MÍ -->
+    <section class="h-home-view">
+        <div class="text-center">
+            <div class="d-flex justify-content-center align-items-end">
+                <picture>
+                    <source srcset="assets/images/img_192.webp" sizes="(min-width: 768px)" type="image/webp">
+                    <source srcset="assets/images/img_256.webp" sizes="(max-width: 767px)" type="image/webp">
+                    <img src="assets/images/img_150.webp" title="Angel Lucero" alt="Imagen de Angel Lucero" width="150" height="150" class="rounded-circle" loading="eager" fetchpriority="high">
+                </picture>
+                <a class="btn-green fw-bold rounded-4 ms-n1 px-2" href="{{environment.linkedin}}" target="_blank"><small>Disponible</small></a>
+            </div>
+            <h1 class="fw-bold text-center display-5 mt-4">Hola, soy Angel Lucero</h1>
+            <label class="mt-3" style="max-width: 500px">Soy un apasionado desarrollador de software con más de {{ years }}
         años de experiencia en metodologías ágiles, bases de datos, backend, frontend, ui/ux y operaciones.<br><br>
         Estoy certificado en Gestión de Proyectos, Scrum, Docker, lo cual refuerza mi
         compromiso con el aprendizaje continuo y la excelencia en mi campo.</label>
-      <div class="d-flex flex-wrap justify-content-center mt-4">
-        <a class="btn btn-dark shadow-btn m-2" href="{{environment.linkedin}}" target="_blank">
-          <i class="pi pi-linkedin me-2 mt-1"></i>LinkedIn</a>
-        <a class="btn btn-dark shadow-btn m-2" href="{{environment.github}}" target="_blank">
-          <i class="pi pi-github me-2 mt-1"></i>GitHub</a>
-      </div>
-      <div class="d-flex flex-wrap justify-content-center">
-        <a class="btn btn-gray shadow-btn m-2" href="mailto:{{environment.email}}" target="_blank">
-          <i class="pi pi-envelope me-2 mt-1"></i>angelluce244@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCIA -->
-  <section class="" id="experience">
-    <h2 class="fw-bold text-center mb-3 pt-top">Experiencia laboral</h2>
-    <div class="rounded shadow mb-3 p-3"
-         *ngFor="let experiencia of informacion.experiencia">
-      <p class="fw-bold m-0">{{ experiencia.cargo }}</p>
-      <div class="d-flex justify-content-between border-bottom">
-        <small class="fw-normal">{{ experiencia.empresa }}</small>
-        <small *ngIf="experiencia.fechaFinal === 'actualidad'" class="fw-success">{{ experiencia.fechaInicial }}
-          - {{ experiencia.fechaFinal }}</small>
-        <small *ngIf="experiencia.fechaFinal !== 'actualidad'" class="fw-light">{{ experiencia.fechaInicial }}
-          - {{ experiencia.fechaFinal }}</small>
-      </div>
-      <div *ngFor="let actividad of experiencia.actividades">
-        <p class="mt-3 mb-0">{{ actividad }}</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- REPOSITORIOS -->
-  <section class="" id="repositories">
-    <h2 class="fw-bold text-center mb-3 pt-top">Repositorios públicos</h2>
-    <div class="grid-card">
-      <div *ngFor="let repositorio of informacion.repositorios"
-           class="rounded shadow text-center p-3">
-        <div class="d-flex justify-content-between mb-3 border-bottom">
-          <p class="fw-bold m-0">{{ repositorio.nombre }}</p>
-          <div class="d-flex justify-content-end">
-            <a class="text-dark px-3" target="_blank" href="{{repositorio.repo}}" aria-label="Código fuente"
-               data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Ver repositorio">
-             <i class="pi pi-github"></i></a>
-<!--            <a class="text-dark" target="_blank" href="{{repositorio.page}}" aria-label="Ver proyecto">-->
-<!--              <i class="pi pi-desktop"></i></a>-->
-          </div>
+            <div class="d-flex flex-wrap justify-content-center mt-4">
+                <a class="btn btn-dark shadow-btn m-2" href="{{environment.linkedin}}" target="_blank">
+                    <i class="pi pi-linkedin me-2 mt-1"></i>LinkedIn</a>
+                <a class="btn btn-dark shadow-btn m-2" href="{{environment.github}}" target="_blank">
+                    <i class="pi pi-github me-2 mt-1"></i>GitHub</a>
+                <a class="btn btn-dark shadow-btn m-2" href="{{environment.gitlab}}" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-gitlab" viewBox="0 0 16 16">
+            <path
+              d="m15.734 6.1-.022-.058L13.534.358a.57.57 0 0 0-.563-.356.6.6 0 0 0-.328.122.6.6 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.67.67 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.05 4.05 0 0 0 1.34-4.668Z"/>
+          </svg> GitLab
+                </a>
+            </div>
+            <!--<div class="d-flex flex-wrap justify-content-center">
+          <a class="btn btn-gray shadow-btn m-2" href="mailto:{{environment.email}}" target="_blank">
+              <i class="pi pi-envelope me-2 mt-1"></i>angelluce244@gmail.com</a>
+      </div>-->
         </div>
-        <p class="fw-normal">{{ repositorio.descripcion }}</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONOCIMIENTOS -->
-  <section class="" id="skills">
-    <h2 class="fw-bold text-center mb-3 pt-top">Conocimientos y aptitudes</h2>
-    <div class="grid-card">
-      <div class="rounded shadow p-3"
-           *ngFor="let conocimiento of informacion.conocimientos">
-        <p class="fw-bold border-bottom">{{ conocimiento.descripcion }}</p>
-        <div *ngFor="let elemento of conocimiento.elemento">
-          <small>{{ elemento }}</small>
+    <!-- EXPERIENCIA -->
+    <section class="" id="experience">
+        <h2 class="fw-bold text-center mb-3 pt-top">Experiencia laboral</h2>
+        <div class="rounded shadow mb-3 p-3" *ngFor="let experiencia of informacion.experiencia">
+            <p class="fw-bold m-0">{{ experiencia.cargo }}</p>
+            <div class="d-flex justify-content-between border-bottom">
+                <small class="fw-normal">{{ experiencia.empresa }}</small>
+                <small [class]="experiencia.fechaFinal === 'actualidad' ? 'fw-success' : 'fw-light'">
+                  {{ experiencia.fechaInicial }} - {{ experiencia.fechaFinal }}</small>
+            </div>
+            <div *ngFor="let actividad of experiencia.actividades">
+                <p class="mt-3 mb-0">{{ actividad }}</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+                <span *ngFor="let etiqueta of experiencia.etiquetas" class="badge rounded-pill text-body" [style]="'background-color: ' + generarColorPastelAleatorio()">{{ etiqueta }}</span>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CERTIFICACIONES -->
-  <section class="" id="certifications">
-    <h2 class="fw-bold text-center mb-3 pt-top">Certificaciones y reconocimientos</h2>
-    <div class="rounded shadow p-3">
-      <div *ngFor="let certificacion of informacion.certificaciones">
-        <p class="fw-bold mt-3 mb-0 border-bottom">{{ certificacion.titulo }}</p>
-        <div class="d-flex justify-content-between">
-          <p class="mb-0">{{ certificacion.empresa }}</p>
-          <small class="mb-0">{{ certificacion.fecha }}</small>
+    <!-- REPOSITORIOS -->
+    <section class="" id="repositories">
+        <h2 class="fw-bold text-center mb-3 pt-top">Repositorios públicos</h2>
+        <div class="grid-card">
+            <div *ngFor="let repositorio of informacion.repositorios" class="rounded shadow text-center p-3">
+                <div class="d-flex justify-content-between border-bottom">
+                    <p class="fw-bold">{{ repositorio.nombre }}</p>
+                    <a class="text-dark px-1" target="_blank" href="{{repositorio.repo}}" aria-label="Código fuente">
+                        <i class="pi pi-github"></i></a>
+                </div>
+                <p class="fw-normal mt-3">{{ repositorio.descripcion }}</p>
+                <div class="d-flex flex-wrap gap-3 mt-3">
+                    <span *ngFor="let etiqueta of repositorio.etiquetas" class="badge rounded-pill text-body" [style]="'background-color: ' + generarColorPastelAleatorio()">{{ etiqueta }}</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- CONOCIMIENTOS -->
+    <section class="" id="skills">
+        <h2 class="fw-bold text-center mb-3 pt-top">Conocimientos y aptitudes</h2>
+        <div class="grid-card">
+            <div class="rounded shadow p-3" *ngFor="let conocimiento of informacion.conocimientos">
+                <p class="fw-bold border-bottom">{{ conocimiento.descripcion }}</p>
+                <div *ngFor="let elemento of conocimiento.elemento">
+                    <small>{{ elemento }}</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICACIONES -->
+    <section class="" id="certifications">
+        <h2 class="fw-bold text-center mb-3 pt-top">Certificaciones y reconocimientos</h2>
+        <div class="rounded shadow p-3 d-flex flex-column gap-3">
+            <div *ngFor="let certificacion of informacion.certificaciones">
+                <p class="fw-bold mb-0">{{ certificacion.titulo }}</p>
+                <div class="d-flex justify-content-between border-bottom">
+                    <p>{{ certificacion.empresa }}</p>
+                    <small>{{ certificacion.fecha }}</small>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <nav id="navbar" class="navbar bg-dark text-center p-1">
-  <button class="hamburger btn btn-transparent m-1 pt-2 fw-medium" id="hamburger" aria-label="Menú">
+    <button class="hamburger btn btn-transparent m-1 pt-2 fw-medium" id="hamburger" aria-label="Menú">
     <i class="pi pi-bars"></i>
   </button>
-  <div class="navbar-section menu" id="menu">
-    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('about-me')"
-            style="cursor: pointer" aria-label="Sobre mí"><small>Sobre mí</small></button>
-    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('experience')"
-            style="cursor: pointer" aria-label="Mi experiencia"><small>Experiencia</small></button>
-    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('repositories')"
-            style="cursor: pointer" aria-label="Mis repositorios"><small>Repositorios</small></button>
-    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('skills')"
-            style="cursor: pointer" aria-label="Mis conocimientos"><small>Conocimientos</small></button>
-    <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('certifications')"
-            style="cursor: pointer" aria-label="Mis certificaciones"><small>Certificaciones</small></button>
-  </div>
-  <div class="navbar-section buttons">
-    <button class="btn btn-transparent m-1 pt-2 fw-medium"
-            data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Ponerme en contacto">
-      <i class="pi pi-send"></i></button>
-    <button class="btn btn-transparent m-1 pt-2 fw-medium" (click)="shareProfile()" aria-label="Compartir perfil">
-      <i class="pi pi-share-alt"></i></button>
-  </div>
+    <div class="navbar-section menu" id="menu">
+        <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('about-me')" style="cursor: pointer" aria-label="Sobre mí"><small>Sobre mí</small></button>
+        <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('experience')" style="cursor: pointer" aria-label="Mi experiencia"><small>Experiencia</small></button>
+        <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('repositories')" style="cursor: pointer" aria-label="Mis repositorios"><small>Repositorios</small></button>
+        <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('skills')" style="cursor: pointer" aria-label="Mis conocimientos"><small>Conocimientos</small></button>
+        <button class="btn text-light m-1 fw-medium" (click)="onClickScrollToElement('certifications')" style="cursor: pointer" aria-label="Mis certificaciones"><small>Certificaciones</small></button>
+    </div>
+    <div class="navbar-section buttons">
+        <button class="btn btn-transparent m-1 pt-2 fw-medium" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Ponerme en contacto">
+      <i class="pi pi-send"></i>
+    </button>
+        <button class="btn btn-transparent m-1 pt-2 fw-medium" (click)="shareProfile()" aria-label="Compartir perfil">
+      <i class="pi pi-share-alt"></i>
+    </button>
+    </div>
 </nav>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">¡Trabajemos juntos!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form [formGroup]="contactForm">
-          <div class="mb-3">
-            <label for="input0" class="form-label">Nombre</label>
-            <input type="text" class="form-control" formControlName="name" id="input0">
-          </div>
-          <div class="mb-3">
-            <label for="input1" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
-            <input type="email" class="form-control" formControlName="email" id="input1">
-            <small *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched"
-                   class="text-danger">Correo electrónico es requerido.</small>
-          </div>
-          <div class="mb-3">
-            <label for="input2" class="form-label">Contacto</label>
-            <input type="tel" class="form-control" formControlName="contact" id="input2">
-          </div>
-          <div class="mb-3">
-            <label for="input4" class="form-label">Déjame un mensaje <span class="text-danger">*</span></label>
-            <textarea class="form-control" formControlName="message" id="input4" rows="3"></textarea>
-            <small *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched"
-                   class="text-danger">Tu mensaje es requerido.</small>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="pi pi-times"></i></button>
-        <button type="button" class="btn btn-dark" (click)="submitForm()">Enviar</button>
-      </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">¡Trabajemos juntos!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="contactForm">
+                    <div class="mb-3">
+                        <label for="input0" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" formControlName="name" id="input0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input1" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" formControlName="email" id="input1">
+                        <small *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched" class="text-danger">Correo electrónico es requerido.</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="input2" class="form-label">Contacto</label>
+                        <input type="tel" class="form-control" formControlName="contact" id="input2">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input4" class="form-label">Déjame un mensaje <span class="text-danger">*</span></label>
+                        <textarea class="form-control" formControlName="message" id="input4" rows="3"></textarea>
+                        <small *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched" class="text-danger">Tu mensaje es requerido.</small>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="pi pi-times"></i></button>
+                <button type="button" class="btn btn-dark" (click)="submitForm()">Enviar</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
