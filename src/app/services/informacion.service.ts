@@ -229,13 +229,13 @@ export class InformacionService {
       {
         cargo: 'Desarrollador independiente',
         empresa: 'Freelance',
-        fechaInicial: 'nov. 2021',
+        fechaInicial: 'nov 2021',
         fechaFinal: 'actualidad',
         actividades: [
           'Desarrollar proyectos de software como: aplicaciones web (PWA, SaaS), aplicaciones móviles multiplataforma (Android) y aplicaciones de escritorio.',
           'Diseñar bases de datos relacionales y no relacionales utilizando herramientas como: PostgreSQL, Supabase y Firestore de Firebase.',
           'Desplegar correctamente aplicaciones en la nube utilizando servicios de empresas como: Amazon Web Services, Firebase, Vercel y Render.',
-          'Asesorar a empresas, negocios, emprendedores en la toma de decisiones tecnológicas para la implementación de software.',
+          'Asesorar a empresarios y emprendedores en la toma de decisiones tecnológicas para la implementación de software.',
           'Realizar mantenimiento y soporte técnico de aplicaciones web y móviles.',
         ],
         etiquetas: [
@@ -244,23 +244,22 @@ export class InformacionService {
           'React',
           'Spring Boot',
           'Flutter',
-          'Android',
           'Node.js',
           'Express',
           'Fast API',
           'Flask',
           'Postgresql',
+          'Oracle',
+          'SQLite',
           'Supabase',
           'Firestore',
           'Docker',
           'Jira',
           'Trello',
-          'GitHub',
           'GitLab',
-          'GitHub Pages',
-          'GitHub Actions',
-          'PrimeNG',
-          'Bootstrap',
+          'GitHub',
+          //'GitHub Pages',
+          //'GitHub Actions',
           'Firebase',
           'Vercel',
           'Render',
@@ -270,13 +269,12 @@ export class InformacionService {
       },
       {
         cargo: 'Desarrollador front end',
-        empresa: 'Führer Cía Ltda',
-        fechaInicial: 'ago. 2023',
+        empresa: 'Führer Cía. Ltda.',
+        fechaInicial: 'ago 2023',
         fechaFinal: 'actualidad',
         actividades: [
           'Desarrollador front-end y encargado del proyecto: SARF, actualmente más de 25 cooperativas son parte de este proyecto.',
           'Desarrollador front-end del proyecto SHUK, aplicación móvil para el comercio de partes y repuestos, disponible para Android e IOS.',
-          'Desarrollador full stack de proyectos secundarios.',
         ],
         etiquetas: [
           'Angular',
@@ -298,8 +296,8 @@ export class InformacionService {
       {
         cargo: 'Desarrollador back end',
         empresa: 'SOFTDEVELOP',
-        fechaInicial: 'jul. 2023',
-        fechaFinal: 'oct. 2023',
+        fechaInicial: 'jul 2023',
+        fechaFinal: 'oct 2023',
         actividades: [
           'Desarrollador back end del proyecto de PESNOT: Sistema de gestión de audiencias y notificaciones del Consejo de la Judicatura.',
         ],
@@ -315,8 +313,8 @@ export class InformacionService {
       {
         cargo: 'Desarrollador full stack',
         empresa: 'FASTAPP S.A.S',
-        fechaInicial: 'jun. 2023',
-        fechaFinal: 'sep. 2023',
+        fechaInicial: 'jun 2023',
+        fechaFinal: 'sep 2023',
         actividades: [
           'Desarrollador full stack y responsable del proyecto de taxímetro (aplicación web y móvil) FASTAPP.',
         ],
@@ -330,8 +328,8 @@ export class InformacionService {
       {
         cargo: 'Desarrollador full stack',
         empresa: 'Futura EC Cía. Ltda.',
-        fechaInicial: 'feb. 2022',
-        fechaFinal: 'may. 2023',
+        fechaInicial: 'feb 2022',
+        fechaFinal: 'may 2023',
         actividades: [
           'Desarrollador full stack y devops del proyecto Argus Risk Management, con múltiples cooperativas siendo parte de este proyecto.',
           'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management.',
@@ -358,9 +356,9 @@ export class InformacionService {
       },
       {
         cargo: 'Pasante de desarrollo de software',
-        empresa: 'Futura EC Cía Ltda',
-        fechaInicial: 'nov. 2021',
-        fechaFinal: 'ene. 2022',
+        empresa: 'Futura EC Cía Ltda.',
+        fechaInicial: 'nov 2021',
+        fechaFinal: 'ene 2022',
         actividades: [
           'Diseñador de interfaces de usuario del proyecto Argus Risk Management.',
           'Desarrollador front end del proyecto Argus Risk Management.',
@@ -379,8 +377,8 @@ export class InformacionService {
       {
         cargo: 'Pasante de administración de sistemas',
         empresa: 'SECOMPU',
-        fechaInicial: 'may. 2017',
-        fechaFinal: 'jun. 2017',
+        fechaInicial: 'may 2017',
+        fechaFinal: 'jun 2017',
         actividades: [
           'Reparar equipos informáticos (laptop, computadoras de escritorio, impresoras, etc.).',
           'Instalar software en equipos informáticos (sistemas operativos, programas, etc.).',
@@ -416,7 +414,7 @@ export class InformacionService {
         nombre: 'Liga de fútbol',
         descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado',
         repo: 'https://github.com/angelluce/football-league-web-ui',
-        etiquetas: ['Angular', 'Bootstrap']
+        etiquetas: ['Angular', 'CSS', 'Bootstrap']
       },
       {
         nombre: 'Nodejs API',
@@ -427,7 +425,7 @@ export class InformacionService {
       {
         nombre: 'Flask API',
         descripcion: 'API REST con Flask para realizar operaciones CRUD, almacena los datos en SQLite',
-        repo: 'https://github.com/angelluce/FlaskServer',
+        repo: 'https://github.com/angelluce/posts-api',
         etiquetas: ['Flask', 'Jinja', 'Bootstrap', 'SQLite']
       },
       {
@@ -451,7 +449,7 @@ export class InformacionService {
       {
         nombre: 'Chat GPT API',
         descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada',
-        repo: 'https://github.com/angelluce/chat-gpt-api',
+        repo: 'https://github.com/angelluce/chatgpt-api',
         etiquetas: ['Python', 'OpenAI']
       },
       {
