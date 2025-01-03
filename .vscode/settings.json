@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/5515646b-0da9-4c6a-98c8-34a68ab73bfb/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.Web/sites/angellucero",
+    "appService.deploySubpath": "dist\\angel-lucero"
+}
