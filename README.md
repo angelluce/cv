@@ -35,6 +35,6 @@ To add this text into commit box to include another account `Co-authored-by: @sm
 Run `ng deploy --base-href=https://angelluce.github.io/[NOMBRE_REPO]/`  to deploy the project to GitHub Pages.
 
 ```shell
-ng build
+ng build --configuration production
 ng deploy --base-href=https://angelluce.github.io/cv/
 ```

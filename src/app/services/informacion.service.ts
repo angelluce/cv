@@ -174,8 +174,8 @@ export class InformacionService {
       {
         descripcion: 'Lenguajes',
         elemento: [
-          'TypeScript',
-          'JavaScript',
+          'Typescript',
+          'Javascript',
           'HTML',
           'CSS',
           'Java',
@@ -199,31 +199,35 @@ export class InformacionService {
         ]
       },
       {
-        descripcion: 'Herramientas en la nube',
+        descripcion: 'Servicios en la nube',
         elemento: [
-          'GitHub',
-          'GitLab',
-          'Firebase',
-          'Supabase',
-          'Jira',
-          'Taiga',
-          'Trello',
-          'Render',
           'Amazon Web Services',
+          'Google Cloud Platform',
+          'Firebase',
+          'Azure',
+          'Supabase',
+          'Vercel',
+          'Render',
         ]
       },
       {
         descripcion: 'Otros',
         elemento: [
           'Git',
-          'Json',
+          'GitHub',
+          'GitLab',
+          'Docker',
+          'Jira',
+          'Trello',
+          'ClickUp',
+          'Taiga',
           'Postman',
+          'Json',
           'Markdown',
           'WebStorm',
           'IntelliJ IDEA',
           'Visual Studio Code',
           'PyCharm',
-          'Docker',
         ]
       }
     ];
@@ -234,7 +238,7 @@ export class InformacionService {
       {
         cargo: 'Desarrollador independiente',
         empresa: 'Freelance',
-        fechaInicial: 'nov 2021',
+        fechaInicial: 'nov. 2021',
         fechaFinal: 'actualidad',
         actividades: [
           'Desarrollo de proyectos de software como aplicaciones PWA, SPA y SaaS principalmente con Angular para el front end; desarrollo de APIs con Node.js, Java y Python; aplicaciones móviles con Ionic, Flutter y Android Studio.',
@@ -275,7 +279,7 @@ export class InformacionService {
       {
         cargo: 'Desarrollador front end',
         empresa: 'Führer Cía. Ltda.',
-        fechaInicial: 'ago 2023',
+        fechaInicial: 'ago. 2023',
         fechaFinal: 'dic. 2024',
         actividades: [
           'Desarrollador front-end del proyecto: SARF, actualmente múltiples cooperativas son parte de este proyecto.',
@@ -303,8 +307,8 @@ export class InformacionService {
       {
         cargo: 'Desarrollador back end',
         empresa: 'SOFTDEVELOP',
-        fechaInicial: 'jul 2023',
-        fechaFinal: 'oct 2023',
+        fechaInicial: 'jul. 2023',
+        fechaFinal: 'oct. 2023',
         actividades: [
           'Desarrollador back end del proyecto de PESNOT: Sistema de gestión de audiencias y notificaciones del Consejo de la Judicatura.',
         ],
@@ -320,8 +324,8 @@ export class InformacionService {
       {
         cargo: 'Desarrollador full stack',
         empresa: 'FASTAPP S.A.S',
-        fechaInicial: 'jun 2023',
-        fechaFinal: 'sep 2023',
+        fechaInicial: 'jun. 2023',
+        fechaFinal: 'sep. 2023',
         actividades: [
           'Desarrollador full stack y responsable del proyecto FASTAPP, aplicación web y móvil de taxímetro.',
         ],
@@ -335,8 +339,8 @@ export class InformacionService {
       {
         cargo: 'Desarrollador full stack',
         empresa: 'Futura EC Cía. Ltda.',
-        fechaInicial: 'feb 2022',
-        fechaFinal: 'may 2023',
+        fechaInicial: 'feb. 2022',
+        fechaFinal: 'may. 2023',
         actividades: [
           'Desarrollador full stack y devops del proyecto Argus Risk Management, con múltiples cooperativas siendo parte de este proyecto.',
           'Desarrollador full stack, devops y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway.',
@@ -364,8 +368,8 @@ export class InformacionService {
       {
         cargo: 'Pasante de desarrollo de software',
         empresa: 'Futura EC Cía Ltda.',
-        fechaInicial: 'nov 2021',
-        fechaFinal: 'ene 2022',
+        fechaInicial: 'nov. 2021',
+        fechaFinal: 'ene. 2022',
         actividades: [
           'Diseñador de interfaces de usuario del proyecto Argus Risk Management.',
           'Desarrollador front end del proyecto Argus Risk Management.',
@@ -384,8 +388,8 @@ export class InformacionService {
       {
         cargo: 'Pasante de administración de sistemas',
         empresa: 'SECOMPU',
-        fechaInicial: 'may 2017',
-        fechaFinal: 'jun 2017',
+        fechaInicial: 'may. 2017',
+        fechaFinal: 'jun. 2017',
         actividades: [
           'Reparar equipos informáticos (laptop, computadoras de escritorio, impresoras, etc.).',
           'Instalar software en equipos informáticos (sistemas operativos, programas, etc.).',
@@ -409,61 +413,61 @@ export class InformacionService {
         nombre: 'Juego de la vida',
         descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida"',
         repo: 'https://github.com/angelluce/game-of-life',
-        etiquetas: ['HTML', ' CSS', 'JavaScript', 'Firebase']
+        etiquetas: ['HTML', ' CSS', 'Javascript', 'Firebase']
       },
       {
         nombre: 'Grabador de pantalla',
         descripcion: 'Proyecto para probar habilidades de JS, permite grabar la pantalla del navegador',
         repo: 'https://github.com/angelluce/screen_recorder',
-        etiquetas: ['HTML', ' CSS', 'JavaScript']
+        etiquetas: ['HTML', ' CSS', 'Javascript']
       },
       {
         nombre: 'Liga de fútbol',
         descripcion: 'Aplicación para visualizar los partidos y resultados con un servidor simulado',
         repo: 'https://github.com/angelluce/football-league-web-ui',
-        etiquetas: ['Angular', 'CSS', 'Bootstrap']
+        etiquetas: ['Angular', 'Typescript', 'Bootstrap']
       },
       {
         nombre: 'Nodejs API',
         descripcion: 'API REST con Nodejs para realizar operaciones CRUD para departamentos',
         repo: 'https://github.com/angelluce/customers-api',
-        etiquetas: ['Node.js', 'Express', 'PostgreSQL']
+        etiquetas: ['Node.js', 'Express', 'Javascript', 'PostgreSQL', 'API']
       },
       {
         nombre: 'Flask API',
         descripcion: 'API REST con Flask para realizar operaciones CRUD, almacena los datos en SQLite',
         repo: 'https://github.com/angelluce/posts-api',
-        etiquetas: ['Flask', 'Jinja', 'Bootstrap', 'SQLite']
+        etiquetas: ['Flask', 'Jinja', 'Bootstrap', 'SQLite', 'API']
       },
       {
         nombre: 'NASA API',
         descripcion: 'Consumo desde la API de la NASA para mostrar la imágenes astronómicas',
         repo: 'https://github.com/angelluce/nasa',
-        etiquetas: ['Angular', 'PrimeNG', 'NASA API']
+        etiquetas: ['Angular', 'PrimeNG', 'Typescript', 'API']
       },
       {
         nombre: 'Rick and Morty API',
         descripcion: 'Consumo desde la API de Rick and Morty para mostrar información de la serie',
         repo: 'https://github.com/angelluce/rick-and-morty',
-        etiquetas: ['Angular', 'PrimeNG', 'Rick and Morty API']
+        etiquetas: ['Angular', 'PrimeNG', 'Typescript', 'API']
       },
       {
         nombre: 'ChatBot WhatsApp',
         descripcion: 'ChatBot para WhatsApp que permite realizar consultas sobre temas varios',
         repo: 'https://github.com/angelluce/chatbot-whatsapp',
-        etiquetas: ['Node.js', 'Express', 'PM2']
+        etiquetas: ['Node.js', 'Express', 'Javascript', 'PM2']
       },
       {
         nombre: 'Chat GPT API',
         descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada',
         repo: 'https://github.com/angelluce/chatgpt-api',
-        etiquetas: ['Python', 'OpenAI']
+        etiquetas: ['Python', 'API']
       },
       {
         nombre: 'Flutter components',
         descripcion: 'Componentes de Flutter para ser reutilizados en diferentes proyectos',
         repo: 'https://github.com/angelluce/flutter_components',
-        etiquetas: ['Flutter']
+        etiquetas: ['Flutter', 'Dart']
       },
     ];
   }

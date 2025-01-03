@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {Informacion} from "../../models/Informacion";
 import {InformacionService} from "../../services/informacion.service";
 import {environment} from "../../../environments/environment";
@@ -15,7 +15,7 @@ import {AlertService} from "../../services/alert.service";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   informacion: Informacion;
   contactForm: FormGroup;
   years: number = 1;
@@ -29,9 +29,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.menuResponsive();
     this.initForm();
     this.years = new Date().getFullYear() - 2021;
+  }
+  ngAfterViewInit(): void {
+    this.menuResponsive();
   }
 
   menuResponsive(): void {

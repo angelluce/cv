@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  email: 'angelluce244@gmail.com',
+  email: 'angellucero.dev@gmail.com',
   // links
   linkedin: 'https://www.linkedin.com/in/angellucero/',
   github: 'https://github.com/angelluce',
