@@ -75,6 +75,11 @@ export class InformacionService {
   obtenerCertificaciones(): Certificacion[] {
     return [
       {
+        titulo: 'Angular 19 Moderno: Domina Angular',
+        empresa: 'Udemy, Bezael Pérez (Angular Expert)',
+        fecha: 'dic. 2024',
+      },
+      {
         titulo: 'Desarrollo de Apps Móviles con Flutter',
         empresa: 'EELA Institute, Universidad Hemisferios',
         fecha: 'jul. 2024',
@@ -232,11 +237,9 @@ export class InformacionService {
         fechaInicial: 'nov 2021',
         fechaFinal: 'actualidad',
         actividades: [
-          'Desarrollar proyectos de software como: aplicaciones web (PWA, SaaS), aplicaciones móviles multiplataforma (Android) y aplicaciones de escritorio.',
-          'Diseñar bases de datos relacionales y no relacionales utilizando herramientas como: PostgreSQL, Supabase y Firestore de Firebase.',
-          'Desplegar correctamente aplicaciones en la nube utilizando servicios de empresas como: Amazon Web Services, Firebase, Vercel y Render.',
-          'Asesorar a empresarios y emprendedores en la toma de decisiones tecnológicas para la implementación de software.',
-          'Realizar mantenimiento y soporte técnico de aplicaciones web y móviles.',
+          'Desarrollo de proyectos de software como aplicaciones PWA, SPA y SaaS principalmente con Angular para el front end; desarrollo de APIs con Node.js, Java y Python; aplicaciones móviles con Ionic, Flutter y Android Studio.',
+          'Despliegue de proyectos en la nube usando Google Cloud, Amazon Web Services, implementando contenedores con Docker y Kubernetes, además de: Azure, Firebase Hosting, Vercel, Render.',
+          'Diseño de bases de datos SQL utilizando en mayor medida Postgres y Supabase; NoSQL con Firestore y Realtime Database de Firestore.',
         ],
         etiquetas: [
           'Angular',
@@ -254,27 +257,29 @@ export class InformacionService {
           'Supabase',
           'Firestore',
           'Docker',
+          'Nginx',
           'Jira',
           'Trello',
           'GitLab',
           'GitHub',
-          //'GitHub Pages',
-          //'GitHub Actions',
+          'GitHub Pages',
+          'GitHub Actions',
           'Firebase',
           'Vercel',
           'Render',
           'Google Cloud Platform',
           'Amazon Web Services',
+          'Azure',
         ]
       },
       {
         cargo: 'Desarrollador front end',
         empresa: 'Führer Cía. Ltda.',
         fechaInicial: 'ago 2023',
-        fechaFinal: 'actualidad',
+        fechaFinal: 'dic. 2024',
         actividades: [
-          'Desarrollador front-end y encargado del proyecto: SARF, actualmente más de 25 cooperativas son parte de este proyecto.',
-          'Desarrollador front-end del proyecto SHUK, aplicación móvil para el comercio de partes y repuestos, disponible para Android e IOS.',
+          'Desarrollador front-end del proyecto: SARF, actualmente múltiples cooperativas son parte de este proyecto.',
+          'Desarrollador front-end de las aplicaciones SHUK y Scape que se encuentran en el mercado nacional.',
         ],
         etiquetas: [
           'Angular',
@@ -291,6 +296,8 @@ export class InformacionService {
           'Keycloak',
           'Linux',
           'SSH',
+          'Nginx',
+          'Amazon Web Services',
         ]
       },
       {
@@ -316,7 +323,7 @@ export class InformacionService {
         fechaInicial: 'jun 2023',
         fechaFinal: 'sep 2023',
         actividades: [
-          'Desarrollador full stack y responsable del proyecto de taxímetro (aplicación web y móvil) FASTAPP.',
+          'Desarrollador full stack y responsable del proyecto FASTAPP, aplicación web y móvil de taxímetro.',
         ],
         etiquetas: [
           'Angular',
@@ -332,9 +339,9 @@ export class InformacionService {
         fechaFinal: 'may 2023',
         actividades: [
           'Desarrollador full stack y devops del proyecto Argus Risk Management, con múltiples cooperativas siendo parte de este proyecto.',
-          'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management.',
           'Desarrollador full stack, devops y responsable del proyecto de integración entre Fitbank y Argus Risk Management: Argus Gateway.',
-          'Desarrollador full stack del proyecto core financiero: Argus Core.'
+          'Desarrollador full stack del proyecto core financiero: Argus Core.',
+          'Responsable de asistencia técnica y soporte del proyecto Argus Risk Management.'
         ],
         etiquetas: [
           'Angular',
