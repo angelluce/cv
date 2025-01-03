@@ -76,7 +76,7 @@
         <h2 class="fw-bold text-center mb-3 pt-top">Conocimientos y aptitudes</h2>
         <div class="grid-card">
             <div class="rounded shadow p-3" *ngFor="let conocimiento of informacion.conocimientos">
-                <p class="fw-bold border-bottom">{{ conocimiento.descripcion }}</p>
+                <p class="fw-bold border-bottom pb-3">{{ conocimiento.descripcion }}</p>
                 <div *ngFor="let elemento of conocimiento.elemento">
                     <small>{{ elemento }}</small>
                 </div>
