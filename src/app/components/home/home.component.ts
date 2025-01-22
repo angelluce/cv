@@ -1,13 +1,13 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
-import {Informacion} from "../../models/Informacion";
-import {InformacionService} from "../../services/informacion.service";
-import {environment} from "../../../environments/environment";
-import {ViewportScroller} from "@angular/common";
+import {AfterViewInit, Component, inject, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {ViewportScroller} from "@angular/common";
+import {environment} from "../../../environments/environment";
 import {EmailService} from "../../services/email.service";
+import {AlertService} from "../../services/alert.service";
+import {InformacionService} from "../../services/informacion.service";
 import {EmailPayloadInterface} from "../../interfaces/email-payload..interface";
 import {EmailResponseInterface} from "../../interfaces/email-response.interface";
-import {AlertService} from "../../services/alert.service";
+import {Informacion} from "../../models/Informacion";
 
 
 @Component({
@@ -16,16 +16,19 @@ import {AlertService} from "../../services/alert.service";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  informacion: Informacion;
-  contactForm: FormGroup;
-  years: number = 1;
+  private readonly _informacionService = inject(InformacionService);
+  private readonly _viewportScroller = inject(ViewportScroller);
+  private readonly _alertService = inject(AlertService);
+  private readonly _formBuilder = inject(FormBuilder);
+  private readonly _emailService = inject(EmailService);
+  protected readonly environment = environment;
 
-  constructor(private informacionService: InformacionService,
-              private viewportScroller: ViewportScroller,
-              private _alertService: AlertService,
-              private _formBuilder: FormBuilder,
-              private _emailService: EmailService) {
-    this.informacion = informacionService.obtenerInformacionCompleta();
+  protected readonly informacion: Informacion;
+  protected contactForm: FormGroup;
+  protected years: number = 1;
+
+  constructor() {
+    this.informacion = this._informacionService.obtenerInformacionCompleta();
   }
 
   ngOnInit(): void {
@@ -63,7 +66,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   onClickScrollToElement(elementId: string): void {
-    this.viewportScroller.scrollToAnchor(elementId);
+    this._viewportScroller.scrollToAnchor(elementId);
   }
 
   initForm() {
@@ -84,8 +87,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this._alertService.showLoading().fire().finally();
 
     const data: EmailPayloadInterface = {
-      recipient: 'angelluce244@gmail.com',
-      subject: 'Angel Lucero: Mensaje',
+      recipient: 'angellucero.dev@gmail.com',
+      subject: 'Angel Lucero CV: Mensaje',
       htmlContent: `<!DOCTYPE html><html lang="es"><head><title>SmartSoft</title><style>* {font-family: sans-serif;font-weight: 500;font-style: normal;text-align: center;color: #4f4f4f;} h1 {color: #120032;} .container {max-width: 500px;margin: 0 auto;} .text-left {text-align: left;} .m-t {margin-top: 2rem;} .text-sm {font-size: 80%;}</style></head><body><div class="container"><h1>Angel Lucero: Mensaje</h1><p class="text-left m-t">Nombre: ${this.contactForm.get('name')?.value}</p><p class="text-left">Correo electrónico: ${this.contactForm.get('email')?.value}</p><p class="text-left">Teléfono: ${this.contactForm.get('contact')?.value}</p><p class="text-left m-t">Mensaje: ${this.contactForm.get('message')?.value}</p><p class="text-sm m-t">© SmartSoft - ${new Date().getFullYear()}</p></div></body></html>`
     }
 
@@ -121,19 +124,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
       console.log("Specified data cannot be shared.");
     }
   }
+  componenteHexadecimal(c: number): string {
+    const hex = c.toString(16);
+    return hex.length === 1 ? "0" + hex : hex;
+  }
 
   generarColorPastelAleatorio(): string {
-    function componenteHexadecimal(c: number): string {
-      const hex = c.toString(16);
-      return hex.length === 1 ? "0" + hex : hex;
-    }
-
-    const r = Math.floor(Math.random() * 64) + 192; // Valores entre 192 y 255 (más claros)
+    const r = Math.floor(Math.random() * 64) + 192;
     const g = Math.floor(Math.random() * 64) + 192;
     const b = Math.floor(Math.random() * 64) + 192;
 
-    return "#" + componenteHexadecimal(r) + componenteHexadecimal(g) + componenteHexadecimal(b);
+    return "#" + this.componenteHexadecimal(r) + this.componenteHexadecimal(g) + this.componenteHexadecimal(b);
   }
-
-  protected readonly environment = environment;
 }

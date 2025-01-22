@@ -22,7 +22,9 @@ export class InformacionService {
     return {
       nombre: 'Angel Lucero',
       profesion: 'Desarrollador de software',
-      descripcion: ''
+      direccion: 'Cuenca - Ecuador',
+      correo: 'angellucero.dev@gmail.com',
+      telefono: '+(593) 96 724 7258',
     };
   }
 
@@ -50,7 +52,7 @@ export class InformacionService {
     return {
       edad: 24,
       direcion: 'Cuenca - Ecuador',
-      correo: 'angelluce244@gmail.com',
+      correo: 'angellucero.dev@gmail.com',
       telefono: '+(593) 96 724 7258',
       redes: this.obtenerRedesSociales()
     }
@@ -182,6 +184,7 @@ export class InformacionService {
           'Python',
           'Dart',
           'SQL',
+          'Go',
         ]
       },
       {
@@ -282,7 +285,7 @@ export class InformacionService {
         fechaInicial: 'ago. 2023',
         fechaFinal: 'dic. 2024',
         actividades: [
-          'Desarrollador front-end del proyecto: SARF, actualmente múltiples cooperativas son parte de este proyecto.',
+          'Desarrollador front-end del proyecto SARF, actualmente múltiples cooperativas son parte de este proyecto.',
           'Desarrollador front-end de las aplicaciones SHUK y Scape que se encuentran en el mercado nacional.',
         ],
         etiquetas: [
@@ -310,7 +313,7 @@ export class InformacionService {
         fechaInicial: 'jul. 2023',
         fechaFinal: 'oct. 2023',
         actividades: [
-          'Desarrollador back end del proyecto de PESNOT: Sistema de gestión de audiencias y notificaciones del Consejo de la Judicatura.',
+          'Desarrollador back end del proyecto PESNOT: Sistema de gestión de audiencias y notificaciones del Consejo de la Judicatura.',
         ],
         etiquetas: [
           'Spring Boot',
@@ -327,7 +330,7 @@ export class InformacionService {
         fechaInicial: 'jun. 2023',
         fechaFinal: 'sep. 2023',
         actividades: [
-          'Desarrollador full stack y responsable del proyecto FASTAPP, aplicación web y móvil de taxímetro.',
+          'Desarrollador full stack y responsable del proyecto FASTAPP: Aplicación web y móvil de taxímetro para la cuidad de Quito.',
         ],
         etiquetas: [
           'Angular',
@@ -413,7 +416,7 @@ export class InformacionService {
         nombre: 'Juego de la vida',
         descripcion: 'Basado en el modelo matemático y computacional denominado "Juego de la vida"',
         repo: 'https://github.com/angelluce/game-of-life',
-        etiquetas: ['HTML', ' CSS', 'Javascript', 'Firebase']
+        etiquetas: ['HTML', ' CSS', 'Javascript']
       },
       {
         nombre: 'Grabador de pantalla',
@@ -428,6 +431,12 @@ export class InformacionService {
         etiquetas: ['Angular', 'Typescript', 'Bootstrap']
       },
       {
+        nombre: 'API Punto de venta',
+        descripcion: 'API REST de un punto de venta con Java y Spring implementando Docker y PostgreSQL',
+        repo: 'https://github.com/angelluce/api-punto-venta',
+        etiquetas: ['Java', 'Spring Boot', 'Docker', 'PostgreSQL', 'API']
+      },
+      {
         nombre: 'Nodejs API',
         descripcion: 'API REST con Nodejs para realizar operaciones CRUD para departamentos',
         repo: 'https://github.com/angelluce/customers-api',
@@ -438,6 +447,12 @@ export class InformacionService {
         descripcion: 'API REST con Flask para realizar operaciones CRUD, almacena los datos en SQLite',
         repo: 'https://github.com/angelluce/posts-api',
         etiquetas: ['Flask', 'Jinja', 'Bootstrap', 'SQLite', 'API']
+      },
+      {
+        nombre: 'Portafolio ejercicios con Go',
+        descripcion: 'Portafolio de ejercicios lógicos utilizando el lenguaje de programación Go',
+        repo: 'https://github.com/angelluce/portafolio_go',
+        etiquetas: ['Go', 'Shell', 'Razonamiento lógico']
       },
       {
         nombre: 'NASA API',
@@ -461,7 +476,7 @@ export class InformacionService {
         nombre: 'Chat GPT API',
         descripcion: 'Apliación con IA que permite generar texto a partir de un texto de entrada',
         repo: 'https://github.com/angelluce/chatgpt-api',
-        etiquetas: ['Python', 'API']
+        etiquetas: ['Python', 'API', 'GPT-3', 'OpenAI']
       },
       {
         nombre: 'Flutter components',
